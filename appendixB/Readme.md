@@ -1,4 +1,4 @@
-This repository contains code samples from my TypeScript Essentials presentation. To run these code samples download Node.js from https://nodejs.org (use the latest version) and install it. Then clone or download this repo into any directory on your computer. In the command window, change into this directory and run 
+This directory contains code samples from appendix B (TypeScript Essentials) plus some extras. To run these code samples download Node.js from https://nodejs.org (use the latest version) and install it. Then clone or download this repo into any directory on your computer. In the command window, change into this directory and run 
 ```
 npm install
 ``` 
