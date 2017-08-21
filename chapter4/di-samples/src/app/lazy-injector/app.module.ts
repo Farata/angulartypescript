@@ -5,8 +5,6 @@ import {AppComponent} from "./app.component";
 import {HomeComponent} from "./home.component";
 import {ProductDetailComponent} from "./product.detail.component";
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
-import {CustomPreloadingStrategy} from "./custom.preloader";
-
 
 @NgModule({
   imports: [ BrowserModule,
@@ -15,11 +13,10 @@ import {CustomPreloadingStrategy} from "./custom.preloader";
       {path: 'product', component: ProductDetailComponent},
 
       {path: 'luxury', loadChildren: './luxury.module#LuxuryModule', data: {preloadme:true} } ]
-      , {preloadingStrategy: CustomPreloadingStrategy}
       )
   ],
   declarations: [ AppComponent, HomeComponent, ProductDetailComponent],
-  providers:[{provide: LocationStrategy, useClass: HashLocationStrategy}, CustomPreloadingStrategy],
+  providers:[{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {}

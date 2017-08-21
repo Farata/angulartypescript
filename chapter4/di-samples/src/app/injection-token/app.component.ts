@@ -4,8 +4,8 @@ export const BACKEND_URL  = new InjectionToken('BackendUrl');
 
 @Component({
   selector: 'app-root',
-  template: '<h1>Injected the following value of BACKEND_URL: {{url}}</h1>}',
-  providers: [  {provide:BACKEND_URL, useValue: 'myQAserver.com'}]
+  template: '<h2>The value of BACKEND_URL is {{url}}</h2>',
+  providers: [  {provide:BACKEND_URL, useValue: 'http://myQAserver.com'}]
 })
 export class AppComponent {
   constructor(@Inject(BACKEND_URL) public url) {}
