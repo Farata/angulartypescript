@@ -4,7 +4,7 @@ import {RouterModule} from '@angular/router';
 import {LuxuryComponent} from "./luxury.component";
 
 @NgModule({
-    imports:      [ CommonModule,
+    imports: [ CommonModule,
         RouterModule.forChild([
         {path: '', component: LuxuryComponent}
     ]) ],

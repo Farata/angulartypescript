@@ -12,7 +12,7 @@ import {LocationStrategy, HashLocationStrategy} from "@angular/common";
       {path: '',        component: HomeComponent},
       {path: 'product', component: ProductDetailComponent},
 
-      {path: 'luxury', loadChildren: './luxury.module#LuxuryModule', data: {preloadme:true} } ]
+      {path: 'luxury', loadChildren: './lazymodule/luxury.module#LuxuryModule'} ]
       )
   ],
   declarations: [ AppComponent, HomeComponent, ProductDetailComponent],
