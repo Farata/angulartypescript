@@ -16,5 +16,4 @@ export class LuxuryComponent {
   ngOnInit() {
     this.luxuryItem = this.luxuryService.getLuxuryItem();
   }
-
 }

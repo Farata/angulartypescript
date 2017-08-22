@@ -6,5 +6,4 @@ export class LuxuryService {
   getLuxuryItem() {
     return "I'm the Luxury service from lazy module";
   }
-
 }
