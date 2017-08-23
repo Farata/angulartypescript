@@ -1,0 +1,25 @@
+<form #f="ngForm">
+
+  <md-input-container>
+    <input mdInput
+           type="text"
+           placeholder="Product title"
+           name="title" ngModel>
+  </md-input-container>
+
+  <md-input-container>
+    <input mdInput
+           type="number"
+           placeholder="Product price"
+           name="price" ngNodel>
+  </md-input-container>
+
+  <md-select placeholder="Category" name="category" ngModel>
+    <md-option *ngFor="let c of categories"
+               [value]="c">{{ c }}</md-option>
+  </md-select>
+
+  <button md-raised-button color="accent" type="submit">
+    <md-icon>search</md-icon>SEARCH
+  </button>
+</form>

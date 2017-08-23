@@ -5,8 +5,7 @@ import {LuxuryService} from "./luxury.service";
     selector: 'luxury',
     template: `<h1 class="gold">Luxury Component</h1>
                The luxury service returned {{luxuryItem}} `,
-    styles: ['.gold {background: yellow}'],
-    providers: [LuxuryService]
+    styles: ['.gold {background: yellow}']
 })
 export class LuxuryComponent {
   luxuryItem: string

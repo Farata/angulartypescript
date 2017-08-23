@@ -11,8 +11,7 @@ import {RouterModule} from '@angular/router';
              {path: 'shipping', component: ShippingComponent}
      ]) ],
   declarations: [ShippingComponent],
-  providers: [ShippingService],
-  exports: [ShippingComponent]
+  providers: [ShippingService]
 })
 export class ShippingModule { }
 

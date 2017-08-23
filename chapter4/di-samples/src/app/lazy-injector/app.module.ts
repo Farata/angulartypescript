@@ -6,7 +6,7 @@ import {HomeComponent} from './home.component';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {ShippingModule} from './shipping/shipping.module';
 
-export function shippingModuleLoader() { // a workaround for issue #18061
+export function shippingModuleLoader() {
   return ShippingModule;
 }
 
@@ -23,3 +23,4 @@ export function shippingModuleLoader() { // a workaround for issue #18061
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {}
+
