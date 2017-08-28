@@ -1,0 +1,10 @@
+{
+  "name": "rxjs_samples",
+  "version": "1.0.0",
+  "description": "RxJS 5 essentials",
+  "author": "Yakov Fain",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "5.4.2"
+  }
+}

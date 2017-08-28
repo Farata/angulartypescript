@@ -17,16 +17,4 @@ nga-product-item {
   flex-basis: calc(100% / 3 - 16px);
 }
 
-/*
-@media (max-width: 1199px) {
-  nga-product-item {
-    flex-basis: calc(50% - 16px);
-  }
-}
 
-@media (max-width: 599px) {
-  nga-product-item {
-    flex-basis: calc(100% - 16px);
-  }
-}
-*/
