@@ -6,5 +6,9 @@
   "license": "MIT",
   "dependencies": {
     "rxjs": "5.4.2"
+  },
+  "devDependencies": {
+    "core-js": "^2.5.1",
+    "es6-shim": "^0.35.3"
   }
 }

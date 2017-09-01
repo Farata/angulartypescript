@@ -350,6 +350,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../../../oreilly_training/video/rxjs/subject-trader.js" />
+        <option value="$PROJECT_DIR$/../../../oreilly_training/video/rxjs/flatmap-subject-trader.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
