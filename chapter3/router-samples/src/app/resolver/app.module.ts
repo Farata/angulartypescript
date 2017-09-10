@@ -7,13 +7,13 @@ import {HomeResComponent} from "./home.component";
 import {DataComponent} from "./data.component";
 import {DataResolver} from "./data.resolver";
 import {DataService} from "./data.service";
-import {HttpModule} from "@angular/http";
+import {HttpClientModule} from "@angular/common/http";
 import {routing} from "./app.routing";
 
 import { MdProgressBarModule } from '@angular/material';
 
 @NgModule({
-  imports:      [ BrowserModule, HttpModule,
+  imports:      [ BrowserModule, HttpClientModule,
     MdProgressBarModule, routing],
   declarations: [ AppComponent, HomeResComponent, DataComponent],
   providers:[DataService, DataResolver,
