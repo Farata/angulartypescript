@@ -12,8 +12,8 @@ import { environment } from '../../environments/environment';
 @NgModule({
   imports:      [ BrowserModule],
   providers: [{provide: ProductService,  useFactory: productServiceFactory,
-                                        deps: ['IS_DEV_ENVIRONMENT']},
-              {provide: 'IS_DEV_ENVIRONMENT', useValue: environment.production}],
+                                        deps: ['IS_PROD_ENVIRONMENT']},
+              {provide: 'IS_PROD_ENVIRONMENT', useValue: environment.production}],
   declarations: [ AppComponent, Product1Component, Product2Component],
   bootstrap:    [ AppComponent ]
 })
