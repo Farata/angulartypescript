@@ -1,6 +1,7 @@
 import {Router} from "@angular/router";
 import {Component} from "@angular/core";
-class Product {
+
+interface Product {
   id: number;
   description: string;
 }
