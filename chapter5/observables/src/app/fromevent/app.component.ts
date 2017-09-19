@@ -18,11 +18,11 @@ export class AppComponent implements AfterViewInit{
 
   ngAfterViewInit() {
 
-    let keyup$: Observable<any> = Observable.fromEvent(this.myInputField.nativeElement, 'keyup');
+    let keyup$ = Observable.fromEvent(this.myInputField.nativeElement, 'keyup');
 
     let keyupValue$ = keyup$
       .debounceTime(500)
-      .map(event => event.target.value)
+      .map(event => event['target'].value)
       .subscribe(stock => this.getStockQuoteFromServer(stock));
   }
 

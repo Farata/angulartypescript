@@ -7,7 +7,7 @@ import {Observable} from "rxjs/Observable";
   template: `    
        <ul>
          <li *ngFor="let product of products | async">
-           {{product.title }} {{product.price | currency}}
+           {{product.title }} {{product.price | currency : "USD": true}}
          </li>
        </ul>
     `
