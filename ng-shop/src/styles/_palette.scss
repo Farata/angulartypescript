@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+// Define the palettes for your theme using the Material Design palettes
+// available in palette.scss (imported above). For each palette, you can
+// optionally specify a default, lighter, and darker hue.
+$ngs-primary: mat-palette($mat-cyan);
+$ngs-accent:  mat-palette($mat-cyan, A200, A100, A400);
+$ngs-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$ngs-theme: mat-light-theme($ngs-primary, $ngs-accent, $ngs-warn);
+
+$ngs-background: map-get($ngs-theme, background);
+$ngs-foreground: map-get($ngs-theme, foreground);
+
+$ngs-brand-font: 'Abril Fatface', cursive;

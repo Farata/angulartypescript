@@ -1,0 +1,40 @@
+[
+  {
+    "id": "-KaXyyyzmP9Y6askhLdx",
+    "description" : "Timekeeper Co makes clocks that tell time precisely. Clock is very simple to use, set the time using your phone, hang it, and viola! You’ll never be late again.",
+    "featured" : true,
+    "imageUrl" : "data/products/img/clock.png",
+    "price" : 120,
+    "title" : "Clock"
+  },
+  {
+    "id": "-KaXz1OjdHZNAxEUWyM1",
+    "description" : "Looks can be deceiving. This Red Popsicle comes in a wide variety of flavors, including strawberry, that burst as soon as it hits the mouth. Red Popsicles melt slow, so savor the flavor.",
+    "featured" : true,
+    "imageUrl" : "data/products/img/popsicle.png",
+    "price" : 300,
+    "title" : "Red Popsicle"
+  },
+  {
+    "id": "-KaXzBkAgT8aN912YTIw",
+    "description" : "Impress your guests with Teapot by Kitchen Stuff. Teapot holds extremely hot liquids and pours them from the spout. Use the handle, shown on the left, so your fingers don’t get burnt while pouring.",
+    "featured" : true,
+    "imageUrl" : "data/products/img/teapot.png",
+    "price" : 210,
+    "title" : "Teapot"
+  },
+  {
+    "id": "-KaXzEUGmuOX7auqbQ4r",
+    "description" : "Who needs pants when you have shoes! Blue suede shoes were meant to go dancing in, so you may want to pick up a few of these. These things are stylish.",
+    "imageUrl" : "data/products/img/chucks.png",
+    "price" : 89,
+    "title" : "Blue suede shoes"
+  },
+  {
+    "id": "-KaXzWhR5WEi-6jEty-7",
+    "description" : "Trying to find the perfect shade to match your mood? Try no longer. Red Lipstick Set by StickLips has you covered for those nights when you need to get out, or even if you’re just headed to work.",
+    "imageUrl" : "data/products/img/lipstick.png",
+    "price" : 25,
+    "title" : "Red Lipstick Set"
+  }
+]

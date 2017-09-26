@@ -1,0 +1,26 @@
+<div class="image">
+  <img [attr.src]="product?.imageUrl"
+       [attr.alt]="product?.title">
+</div>
+
+<div class="content">
+  <h1>{{ product?.title }}</h1>
+  <p>{{ product?.description }}</p>
+
+  <div class="quantity">
+    <mat-select placeholder="Quantity"
+               [(ngModel)]="quantity">
+      <mat-option [value]="1">1 item</mat-option>
+      <mat-option [value]="2">2 items</mat-option>
+      <mat-option [value]="3">3 items</mat-option>
+      <mat-option [value]="4">4 items</mat-option>
+      <mat-option [value]="5">5 items</mat-option>
+    </mat-select>
+
+    <button mat-mini-fab
+            (click)="addItems()"
+            [disabled]="!quantity">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import './palette';
+
+// Include the base styles for Angular Material core. We include this here so
+// you only have to load a single CSS file for Angular Material in your app.
+@include mat-core();
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+@include angular-material-theme($ngs-theme);
+
+mat-ink-bar {
+  background-color: mat-color($ngs-accent);
+}
+
+body {
+  color: mat-color($ngs-foreground, text);
+  font-family: $mat-font-family;
+  font-size: rem(1.4);
+}
