@@ -14,6 +14,8 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductService } from './shared/product.service';
 import {AuctionMaterialModule} from "./auction-material/auction-material.module";
 import {FormsModule} from "@angular/forms";
+import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,7 @@ import {FormsModule} from "@angular/forms";
     AuctionMaterialModule,
     FormsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

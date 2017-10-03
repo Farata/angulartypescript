@@ -1,23 +1,10 @@
-<!--<div class="thumbnail">
-  <img src="http://placehold.it/320x150">
-  <div class="caption">
-    <h4 class="pull-right">{{ product.price | currency }}</h4>
-    <h4><a [routerLink]="['/products', product.id]">{{ product.title }}</a></h4>
-    <p>{{ product.description }}</p>
-  </div>
-    <div class="ratings">
-    <nga-stars [rating]="product.rating"></nga-stars>
-  </div>
-</div>-->
-
-
-<md-card>
-  <md-card-title>{{ product.title }}</md-card-title>
-  <img md-card-image src="http://placehold.it/320x150">
-  <md-card-content>
+<mat-card>
+  <mat-card-title>{{ product.title }}</mat-card-title>
+  <img mat-card-image src="http://placehold.it/320x150">
+  <mat-card-content>
     {{ product.description }}
-  </md-card-content>
-  <md-card-actions>
-    <a md-button color="accent" [routerLink]="['/products', product.id]">VIEW</a>
-  </md-card-actions>
-</md-card>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button color="accent" [routerLink]="['/products', product.id]">VIEW</a>
+  </mat-card-actions>
+</mat-card>
