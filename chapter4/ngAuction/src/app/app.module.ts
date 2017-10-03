@@ -12,10 +12,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import { ProductService } from './shared/product.service';
-import {AuctionMaterialModule} from "./auction-material/auction-material.module";
-import {FormsModule} from "@angular/forms";
-import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
-
+import {AuctionMaterialModule} from './auction-material/auction-material.module';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +33,7 @@ import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
     AuctionMaterialModule,
     FormsModule
   ],
-  providers: [ProductService, { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
