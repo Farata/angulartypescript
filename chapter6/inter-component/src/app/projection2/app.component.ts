@@ -15,5 +15,5 @@ import {Component, ViewEncapsulation} from '@angular/core';
   `
 })
 export class AppComponent {
-  todaysDate: string = new Date().toLocaleDateString();
+  todaysDate = new Date().toLocaleDateString();
 }

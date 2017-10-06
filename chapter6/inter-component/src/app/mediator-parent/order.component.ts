@@ -8,7 +8,7 @@ import {IStock} from './istock';
 })
 export class OrderComponent {
 
-  message:string = "Waiting for orders...";
+  message = "Waiting for orders...";
 
   private _stock: IStock;
 
