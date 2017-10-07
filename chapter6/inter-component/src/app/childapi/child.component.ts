@@ -10,6 +10,6 @@ export class ChildComponent {
   @Input() name: string;
 
   greet() {
-    console.log(`Hello from ${this.name}.`);
+    console.log(`Hello from ${this.name}`);
   }
 }

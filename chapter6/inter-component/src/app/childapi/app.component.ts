@@ -7,9 +7,7 @@ import {AfterViewInit, Component, QueryList, ViewChild, ViewChildren} from "@ang
     <child name= "John" #child1></child>
     
     <child name= "Mary" #child2></child>
-
-    <button (click)="child2.greet()">Invoke greet() on child 2</button>
-
+    
     <button (click)="greetAllChildren()">Invoke greet() on both chlidren</button>
   `
 })
@@ -27,5 +25,4 @@ export class AppComponent implements AfterViewInit {
   greetAllChildren(){
      this.allChildren.forEach(child => child.greet());
   }
-
 }
