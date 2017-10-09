@@ -1,4 +1,4 @@
-import {OnChanges, Input, SimpleChange, Component} from "@angular/core";
+import {OnChanges, Input, SimpleChange, Component, ChangeDetectionStrategy} from "@angular/core";
 
 @Component({
   selector: 'child',
@@ -10,6 +10,7 @@ import {OnChanges, Input, SimpleChange, Component} from "@angular/core";
       <div>User name: {{user.name}}</div>
     </div>
   `
+  // , changeDetection: ChangeDetectionStrategy.OnPush  // uncomment and child component's user name won't be updated
 })
 export class ChildComponent implements OnChanges {
   @Input() greeting: string;
