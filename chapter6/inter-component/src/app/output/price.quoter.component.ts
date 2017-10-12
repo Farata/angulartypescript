@@ -5,26 +5,23 @@ import {IPriceQuote} from "./iprice.quote";
 @Component({
   selector: 'price-quoter',
   template: `<strong>Inside PriceQuoterComponent:
-               {{stockSymbol}} {{price | currency:'USD':true}}</strong>`,
+               {{priceQuote.stockSymbol}} 
+               {{priceQuote.lastPrice | currency:'USD':true}}</strong>`,
   styles:[`:host {background: pink;}`]
 })
 export class PriceQuoterComponent {
+  @Output() lastPrice = new EventEmitter<IPriceQuote>();
 
-  @Output() lastPrice: EventEmitter <IPriceQuote> = new EventEmitter();
-
-  stockSymbol = "IBM";
-  price;
+  priceQuote : IPriceQuote;
 
   constructor() {
     setInterval(() => {
-      let priceQuote: IPriceQuote = {
-        stockSymbol: this.stockSymbol,
+      this.priceQuote = {
+        stockSymbol: "IBM",
         lastPrice: 100*Math.random()
       };
 
-      this.price = priceQuote.lastPrice;
-
-      this.lastPrice.emit(priceQuote);
-    }, 1000);
+      this.lastPrice.emit(this.priceQuote);
+    }, 2000);
   }
 }

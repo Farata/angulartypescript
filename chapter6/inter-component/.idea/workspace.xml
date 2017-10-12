@@ -18,7 +18,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="child.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="child.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/comp-lifecycle/child.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -30,24 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="child.component-docheck.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/comp-lifecycle/child.component-docheck.ts">
+      <file leaf-file-name="price.quoter.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/output/price.quoter.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="71" />
               <folding>
-                <element signature="e#0#117#0" expanded="true" />
-                <marker date="1507290233000" expanded="true" signature="234:348" ph="..." />
+                <marker date="1507843083000" expanded="true" signature="171:313" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keyvalue_differs.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/change_detection/differs/keyvalue_differs.d.ts">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/output/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="94" column="3" lean-forward="false" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -171,8 +170,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/input/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/input/order.componenent.ts" />
-        <option value="$PROJECT_DIR$/src/app/output/price.quoter.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/output/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/mediator-parent/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/mediator-parent/price.quoter.component.ts" />
         <option value="$PROJECT_DIR$/src/app/mediator-service-subject/app.component.ts" />
@@ -191,6 +188,8 @@
         <option value="$PROJECT_DIR$/src/app/childapi/child.component.ts" />
         <option value="$PROJECT_DIR$/src/app/childapi/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/comp-lifecycle/child.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/output/price.quoter.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/output/app.component.ts" />
       </list>
     </option>
   </component>
@@ -266,6 +265,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inter-component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inter-component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,12 +451,13 @@
       <workItem from="1506014767112" duration="2057000" />
       <workItem from="1506444049050" duration="553000" />
       <workItem from="1507050602079" duration="42346000" />
-      <workItem from="1507565498617" duration="609000" />
+      <workItem from="1507565498617" duration="3210000" />
+      <workItem from="1507842207182" duration="1279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114553000" />
+    <option name="totallyTimeSpent" value="118433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -564,6 +586,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -571,20 +594,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/output/price.quoter.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/output/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,6 +602,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -613,6 +624,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding>
+            <marker date="1507117051000" expanded="true" signature="169:308" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -620,6 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -663,6 +678,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <marker date="1507135625000" expanded="true" signature="212:321" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,6 +688,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,11 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <marker date="1507194288000" expanded="true" signature="182:298" ph="..." />
-            <marker date="1507194288000" expanded="true" signature="203:209" ph="..." />
-            <marker date="1507194288000" expanded="true" signature="255:292" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,11 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <marker date="1507194574000" expanded="true" signature="182:368" ph="..." />
-            <marker date="1507194574000" expanded="true" signature="255:262" ph="..." />
-            <marker date="1507194574000" expanded="true" signature="308:362" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,16 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <marker date="1507241641000" expanded="true" signature="161:416" ph="..." />
-            <marker date="1507241641000" expanded="true" signature="195:262" ph="..." />
-            <marker date="1507241641000" expanded="true" signature="274:343" ph="..." />
-            <marker date="1507241641000" expanded="true" signature="691:1078" ph="..." />
-            <marker date="1507241641000" expanded="true" signature="726:858" ph="..." />
-            <marker date="1507241641000" expanded="true" signature="776:845" ph="..." />
-            <marker date="1507241641000" expanded="true" signature="870:1005" ph="..." />
-            <marker date="1507241641000" expanded="true" signature="922:992" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,6 +821,24 @@
           <folding>
             <marker date="1507566022000" expanded="true" signature="214:328" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/output/price.quoter.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="71" />
+          <folding>
+            <marker date="1507843083000" expanded="true" signature="171:313" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/output/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
