@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {FormGroup, FormControl} from "@angular/forms";
+import {FormGroup, FormControl, ValidationErrors} from "@angular/forms";
 
 
-function ssnValidator(control: FormControl): {[key: string]: any} | null{
+function ssnValidator(control: FormControl): ValidationErrors | null{
   const value: string = control.value || '';
   const valid = value.match(/^\d{9}$/);
   return valid ? null : {ssn: true};
@@ -11,18 +11,18 @@ function ssnValidator(control: FormControl): {[key: string]: any} | null{
 @Component({
   selector: 'app-root',
   template: `
-    <form [formGroup]="form">
-      SSN: <input type="text" formControlName="my-ssn">
-           <span [hidden]="!form.hasError('ssn', 'my-ssn')">SSN is invalid</span>
+    <form [formGroup]="myForm">
+      SSN: <input type="text" formControlName="socialSecurity">
+           <span [hidden]="!myForm.hasError('ssn', 'socialSecurity')">SSN is invalid</span>
     </form>
   `
 })
 export class AppComponent {
-  form: FormGroup;
+  myForm: FormGroup;
 
   constructor() {
-    this.form = new FormGroup({
-      'my-ssn': new FormControl('', ssnValidator)
+    this.myForm = new FormGroup({
+      'socialSecurity': new FormControl('', ssnValidator)
     });
   }
 }
