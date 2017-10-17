@@ -5,7 +5,7 @@ import {FormGroup, FormControl, ValidationErrors} from "@angular/forms";
 function ssnValidator(control: FormControl): ValidationErrors | null{
   const value: string = control.value || '';
   const valid = value.match(/^\d{9}$/);
-  return valid ? null : {ssn: true};
+  return valid ? null : {ssn: {description: 'SSN is invalid'}};
 }
 
 @Component({
@@ -13,7 +13,9 @@ function ssnValidator(control: FormControl): ValidationErrors | null{
   template: `
     <form [formGroup]="myForm">
       SSN: <input type="text" formControlName="socialSecurity">
-           <span [hidden]="!myForm.hasError('ssn', 'socialSecurity')">SSN is invalid</span>
+      <span [hidden]="!myForm.hasError('ssn', 'socialSecurity')"> 
+             {{myForm.getError('ssn', 'socialSecurity')?.description}}
+           </span>
     </form>
   `
 })

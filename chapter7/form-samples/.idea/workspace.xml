@@ -31,14 +31,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="main-group-validator.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main-group-validator.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/reactive-validator/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="75">
+              <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-                <marker date="1507985330000" expanded="true" signature="394:562" ph="..." />
+                <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
+                <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
               </folding>
             </state>
           </provider>
@@ -71,9 +84,27 @@
       <file leaf-file-name=".angular-cli.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.angular-cli.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="90" column="25" lean-forward="false" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+            <state relative-caret-position="189">
+              <caret line="115" column="35" lean-forward="false" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/group-validators/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+                <marker date="1508052601000" expanded="true" signature="648:1693" ph="..." />
+                <marker date="1508052601000" expanded="true" signature="660:857" ph="..." />
+                <marker date="1508052601000" expanded="true" signature="870:1063" ph="..." />
+                <marker date="1508052601000" expanded="true" signature="1107:1606" ph="..." />
+                <marker date="1508052601000" expanded="true" signature="1121:1352" ph="..." />
+                <marker date="1508052601000" expanded="true" signature="1367:1593" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +112,8 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/three-validators/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="315">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="54" />
               <folding>
                 <marker date="1507982945000" expanded="true" signature="147:886" ph="..." />
                 <marker date="1507982945000" expanded="true" signature="160:803" ph="..." />
@@ -106,35 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/reactive/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-                <marker date="1488895583000" expanded="true" signature="207:638" ph="..." />
-                <marker date="1488895583000" expanded="true" signature="394:582" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/reactive/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,8 +171,10 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/dynamic-form-controls/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/two-validators/app.component.ts" />
-        <option value="$PROJECT_DIR$/.angular-cli.json" />
         <option value="$PROJECT_DIR$/src/app/three-validators/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/main-group-validator.ts" />
+        <option value="$PROJECT_DIR$/.angular-cli.json" />
+        <option value="$PROJECT_DIR$/src/app/group-validators/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/reactive-validator/app.component.ts" />
       </list>
     </option>
@@ -189,7 +198,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1222" />
+    <option name="width" value="1261" />
     <option name="height" value="773" />
   </component>
   <component name="ProjectView">
@@ -225,6 +234,20 @@
               <item name="form-samples" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="form-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="form-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="async-validator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="form-samples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="form-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="group-validators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="form-samples" type="b2602c69:ProjectViewProjectNode" />
@@ -371,26 +394,25 @@
       <workItem from="1506011352726" duration="1569000" />
       <workItem from="1506016141881" duration="5869000" />
       <workItem from="1507664788349" duration="5565000" />
-      <workItem from="1507903631827" duration="14888000" />
+      <workItem from="1507903631827" duration="22260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86689000" />
+    <option name="totallyTimeSpent" value="94061000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1222" height="773" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1261" height="773" extended-state="0" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24468085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19349723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29529244" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26105565" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -433,25 +455,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/async-validator/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <marker date="1495546334000" expanded="true" signature="597:959" ph="..." />
-            <marker date="1495546334000" expanded="true" signature="597:1108" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.angular-cli.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -465,7 +468,8 @@
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1507985330000" expanded="true" signature="394:562" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -512,7 +516,8 @@
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1507985330000" expanded="true" signature="394:562" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -569,7 +574,8 @@
           <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1507985330000" expanded="true" signature="394:562" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -587,7 +593,8 @@
           <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1507985330000" expanded="true" signature="394:562" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -763,18 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/async-validator/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <marker date="1495546334000" expanded="true" signature="597:959" ph="..." />
-            <marker date="1495546334000" expanded="true" signature="597:1108" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/dynamic-form-controls/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -797,18 +792,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/async-validator/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <marker date="1495546334000" expanded="true" signature="597:959" ph="..." />
+            <marker date="1495546334000" expanded="true" signature="597:1108" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main-group-validator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.angular-cli.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="90" column="25" lean-forward="false" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+        <state relative-caret-position="189">
+          <caret line="115" column="35" lean-forward="false" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/three-validators/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="315">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="54" />
           <folding>
             <marker date="1507982945000" expanded="true" signature="147:886" ph="..." />
             <marker date="1507982945000" expanded="true" signature="160:803" ph="..." />
@@ -819,13 +836,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/reactive-validator/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/group-validators/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="60">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="58" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1507985330000" expanded="true" signature="394:562" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="648:1693" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="660:857" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="870:1063" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="1107:1606" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="1121:1352" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="1367:1593" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/reactive-validator/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
           </folding>
         </state>
       </provider>
