@@ -10,11 +10,11 @@ import {DataService} from "./data.service";
 import {HttpClientModule} from "@angular/common/http";
 import {routing} from "./app.routing";
 
-import { MdProgressBarModule } from '@angular/material';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   imports:      [ BrowserModule, HttpClientModule,
-    MdProgressBarModule, routing],
+    MatProgressBarModule, routing],
   declarations: [ AppComponent, HomeResComponent, DataComponent],
   providers:[DataService, DataResolver,
     {provide: LocationStrategy, useClass: HashLocationStrategy}],

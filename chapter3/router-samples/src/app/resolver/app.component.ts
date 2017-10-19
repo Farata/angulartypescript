@@ -10,13 +10,13 @@ import {
         <router-outlet></router-outlet>
         <div *ngIf="navigating">
             Loading...              
-            <md-progress-bar mode="indeterminate"></md-progress-bar>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
         </div>
     `
 })
 export class AppComponent {
 
-  navigating: boolean = false;
+  navigating = false;
 
   constructor (private router: Router){
     this.router.events.subscribe(

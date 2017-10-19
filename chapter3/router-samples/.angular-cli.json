@@ -124,7 +124,7 @@
         "favicon.ico"
       ],
       "index": "index.html",
-      "main": "main-secondary.ts",
+      "main": "main-outlets.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
@@ -138,7 +138,7 @@
         "prod": "environments/environment.prod.ts"
       }
     },
-    { "name":"lazy",
+    { "name":"luxury",
       "root": "src",
       "outDir": "dist",
       "assets": [

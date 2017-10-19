@@ -1,23 +1,25 @@
 <form #f="ngForm">
 
-  <mat-input-container>
+  <mat-form-field>
     <input matInput
            type="text"
            placeholder="Product title"
            name="title" ngModel>
-  </mat-input-container>
+  </mat-form-field>
 
-  <mat-input-container>
-    <input matInput
+  <mat-form-field>
+     <input matInput
            type="number"
            placeholder="Product price"
            name="price" ngNodel>
-  </mat-input-container>
+  </mat-form-field>
 
-  <mat-select placeholder="Category" name="category" ngModel>
-    <mat-option *ngFor="let c of categories"
-               [value]="c">{{ c }}</mat-option>
-  </mat-select>
+  <mat-form-field>
+    <mat-select placeholder="Category" name="category" ngModel>
+      <mat-option *ngFor="let c of categories"
+                 [value]="c">{{ c }}</mat-option>
+    </mat-select>
+  </mat-form-field>
 
   <button mat-raised-button color="accent" type="submit">
     <mat-icon>search</mat-icon>SEARCH
