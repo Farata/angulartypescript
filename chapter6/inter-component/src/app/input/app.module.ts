@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {OrderComponent} from "./order.componenent";
+import {OrderProcessorComponent} from "./order.componenent";
 
 @NgModule({
   declarations: [
-    AppComponent, OrderComponent
+    AppComponent, OrderProcessorComponent
   ],
   imports: [BrowserModule],
   bootstrap: [AppComponent]
