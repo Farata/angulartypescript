@@ -1,5 +1,7 @@
-import {Component, Output, Directive, EventEmitter} from '@angular/core';
+import {Component, Output, EventEmitter} from '@angular/core';
 import {IStock} from './istock';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/observable/interval';
 
 @Component({
   selector: 'price-quoter',
@@ -12,12 +14,17 @@ export class PriceQuoterComponent {
   @Output() buy: EventEmitter <IStock> = new EventEmitter();
 
   stockSymbol = "IBM";
-  lastPrice;
+  lastPrice: number;
 
   constructor() {
+    Observable.interval(2000)
+      .subscribe(data =>
+      this.lastPrice = 100 * Math.random());
+
+    /* setInterval() is browser-only API so we used Observable.interval()
     setInterval(() => {
       this.lastPrice = (100*Math.random());
-    }, 2000);
+    }, 2000);*/
   }
 
   buyStocks(): void{

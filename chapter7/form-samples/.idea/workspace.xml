@@ -56,8 +56,8 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/dynamic-validator/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="472">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <marker date="1508725053000" expanded="true" signature="216:591" ph="..." />
@@ -70,8 +70,8 @@
       <file leaf-file-name="model.d.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/@angular/forms/src/model.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="122" column="30" lean-forward="false" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="30" />
+            <state relative-caret-position="428">
+              <caret line="140" column="32" lean-forward="false" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -202,7 +202,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1261" />
     <option name="height" value="773" />
@@ -287,7 +287,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
-    <property name="SearchEverywhereHistoryKey" value="Abstract&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="AbstractControl&#9;null&#9;null&#10;Abstract&#9;null&#9;null" />
+    <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -401,15 +402,15 @@
       <workItem from="1506011352726" duration="1569000" />
       <workItem from="1506016141881" duration="5869000" />
       <workItem from="1507664788349" duration="5565000" />
-      <workItem from="1507903631827" duration="33962000" />
+      <workItem from="1507903631827" duration="36224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105763000" />
+    <option name="totallyTimeSpent" value="108025000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1261" height="773" extended-state="0" />
+    <frame x="0" y="23" width="1261" height="773" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -792,22 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/group-validators/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1508052601000" expanded="true" signature="648:1693" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="660:857" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="870:1063" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="1107:1606" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="1121:1352" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="1367:1593" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.angular-cli.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -830,18 +815,6 @@
           <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/formbuilder/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1483536428000" expanded="true" signature="208:639" ph="..." />
-            <marker date="1483536428000" expanded="true" signature="395:583" ph="..." />
           </folding>
         </state>
       </provider>
@@ -872,18 +845,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/group-validators/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1508052601000" expanded="true" signature="648:1693" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="660:857" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="870:1063" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="1107:1606" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="1121:1352" ph="..." />
+            <marker date="1508052601000" expanded="true" signature="1367:1593" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/formbuilder/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1483536428000" expanded="true" signature="208:639" ph="..." />
+            <marker date="1483536428000" expanded="true" signature="395:583" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/forms/src/model.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="122" column="30" lean-forward="false" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="30" />
+        <state relative-caret-position="428">
+          <caret line="140" column="32" lean-forward="false" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/dynamic-validator/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="472">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <marker date="1508725053000" expanded="true" signature="216:591" ph="..." />
