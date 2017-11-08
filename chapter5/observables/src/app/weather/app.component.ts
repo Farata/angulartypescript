@@ -39,7 +39,7 @@ export class AppComponent implements OnInit{
       );
   }
 
-  getWeather(city: string): Observable<Array<string>> {
+  getWeather(city: string): Observable<any> {
     return this.http.get(this.baseWeatherURL + city + this.urlSuffix)
       .catch( err => {
         if (err.status ===404){
