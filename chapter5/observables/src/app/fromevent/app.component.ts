@@ -1,8 +1,10 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import 'rxjs/add/observable/fromEvent';
 import {Observable} from "rxjs/Observable";
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/fromEvent';
+/* import 'rxjs/add/operator/debounceTime';  // prior to RxJS 5.5
+import 'rxjs/add/operator/map';              // prior to RxJS 5.5
+*/
+import {debounceTime, map} from 'rxjs/operators';
 
 @Component({
   selector: "app-root",
@@ -21,8 +23,9 @@ export class AppComponent implements AfterViewInit{
     let keyup$ = Observable.fromEvent(this.myInputField.nativeElement, 'keyup');
 
     let keyupValue$ = keyup$
-      .debounceTime(500)
-      .map(event => event['target'].value)
+      .pipe(
+         debounceTime(500),
+         map(event => event['target'].value))
       .subscribe(stock => this.getStockQuoteFromServer(stock));
   }
 
