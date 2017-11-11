@@ -55,7 +55,7 @@
       }
     },
     {
-      "name":"mediator1",
+      "name":"mediator-parent",
       "root": "src",
       "outDir": "dist",
       "assets": [
@@ -80,7 +80,7 @@
       }
     },
     {
-      "name":"mediator2",
+      "name":"mediator-service",
       "root": "src",
       "outDir": "dist",
       "assets": [

@@ -6,13 +6,13 @@ import {IStock} from './istock';
   template: `
     <price-quoter (buy)="priceQuoteHandler($event)"></price-quoter>
     
-    <order-processor [stock]="stock"></order-processor>
+    <order-processor [stock]="receivedStock"></order-processor>
   `
 })
 export class AppComponent {
-  stock: IStock;
+  receivedStock: IStock;
 
   priceQuoteHandler(event:IStock) {
-    this.stock = event;
+    this.receivedStock = event;
   }
 }
