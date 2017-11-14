@@ -16,7 +16,7 @@ export class DataService{
             return Observable.from(this.mydata);  // return from cache
         } else
         {
-            return this.http.get("./assets/45MB_DATA.json")
+            return this.http.get<string[]>("./assets/45MB_DATA.json")
                 .do(data => this.mydata = data);
         }
     }
