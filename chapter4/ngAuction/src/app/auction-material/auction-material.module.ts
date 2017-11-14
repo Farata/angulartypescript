@@ -11,7 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
+// import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material'; // not needed starting from AM 5.0
 
 @NgModule({
   imports: [
@@ -23,8 +23,8 @@ import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
     MatFormFieldModule,
     MatCardModule,
     BrowserAnimationsModule
-  ],
-  providers: [ { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }]
+  ]
+//  providers: [ { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }]
 
 })
 export class AuctionMaterialModule { }
