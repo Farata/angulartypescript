@@ -8,5 +8,7 @@ In other chapters, multiple code sample apps are included in the same project, e
 
 You can read more about configuring multiple apps in the same project here: https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project
 
+Consider watching videos where Yakov Fain shows how to build apps from scratch using Angular CLI: http://bit.ly/2iiKjDV
+
 
 For Angular training inquiries send an email to training @ faratasystems.com
