@@ -19,7 +19,7 @@ export class SsnValidatorService {
   }
   /**
    *
-   This function is returns validation in the format prescribed by Angular validation API.,
+   This function returns validation in the format prescribed by Angular validation API.,
    But this function  can't be attached to the form control as a validator.
    Invoke it using the switchmap/subscribe combo (see app.component.ts)
    */
