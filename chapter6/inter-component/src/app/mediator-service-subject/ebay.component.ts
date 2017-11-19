@@ -1,28 +1,16 @@
 import {Component, OnDestroy} from '@angular/core';
 import {StateService} from "./state.service";
-import {Subscription} from 'rxjs/Subscription'
+import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'product',
   template: `<div class="ebay">
                 <h2 >eBay component</h2>
-               Search criteria: {{searchFor}}
+               Search criteria: {{state.getState() | async}}
                </div>`,
   styles: ['.ebay {background: cyan}']
 })
-export class EbayComponent implements OnDestroy {
+export class EbayComponent {
 
-  searchFor: string;
-  subscription: Subscription;
-
-  constructor(private state: StateService){
-
-    this.subscription = state.getState()
-      .subscribe(event => this.searchFor = event);
-
-  }
-
-  ngOnDestroy() {
-    this.subscription.unsubscribe();  // a must
-  }
+  constructor(public state: StateService){}
 }
