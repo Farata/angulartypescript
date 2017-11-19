@@ -9,12 +9,11 @@ export class StateService{
 
   set searchCriteria(value: string) {
 
-    this.stateSubject.next(value);
+    this.stateSubject.next(value);  // emitting the value
 
-    console.log(`StateService BehaviorSubject emitting ${value}`);
   }
 
   getState(): Observable<string>{
-    return this.stateSubject.asObservable();  // to prevent amazon and ebay components from using next()
+    return this.stateSubject.asObservable();  // to prevent subscribers from using next()
   }
 }

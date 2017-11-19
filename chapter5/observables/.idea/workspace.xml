@@ -432,6 +432,26 @@
         <option value="$PROJECT_DIR$/../../../devoxx/be/angular_applied/AngularForJavDevs/myStore/node_modules/reflect-metadata/Reflect.js" />
         <option value="$PROJECT_DIR$/../../../devoxx/be/angular_applied/AngularForJavDevs/myStore/node_modules/reflect-metadata/Reflect.js.map" />
         <option value="$PROJECT_DIR$/../../../devoxx/be/angular_applied/AngularForJavDevs/myStore/node_modules/reflect-metadata/Reflect.d.ts" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-decorate.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-metadata.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
+        <option value="$PROJECT_DIR$/../../chapter6/inter-component/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
       </list>
     </option>
   </component>

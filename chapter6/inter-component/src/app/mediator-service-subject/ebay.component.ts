@@ -12,7 +12,7 @@ import {Subscription} from 'rxjs/Subscription'
 })
 export class EbayComponent implements OnDestroy {
 
-  searchFor;
+  searchFor: string;
   subscription: Subscription;
 
   constructor(private state: StateService){
