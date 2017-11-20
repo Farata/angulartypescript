@@ -1,6 +1,5 @@
-import {Component, OnDestroy} from '@angular/core';
+import {Component} from '@angular/core';
 import {StateService} from "./state.service";
-import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'product',
