@@ -17,23 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main-group-validator.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main-group-validator.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/reactive-validator/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="57">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
                 <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
@@ -43,21 +31,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".angular-cli.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.angular-cli.json">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/reactive/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="254" column="7" lean-forward="false" selection-start-line="254" selection-start-column="7" selection-end-line="254" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+                <marker date="1488895583000" expanded="true" signature="207:638" ph="..." />
+                <marker date="1488895583000" expanded="true" signature="394:582" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/dynamic-validator/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="45" column="1" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+            <state relative-caret-position="332">
+              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <marker date="1508725053000" expanded="true" signature="216:591" ph="..." />
@@ -67,21 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@angular/forms/src/model.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="140" column="32" lean-forward="false" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/dynamic-validator/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="190">
+              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -93,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/app/formbuilder/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
                 <marker date="1483536428000" expanded="true" signature="208:639" ph="..." />
@@ -106,16 +88,16 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/group-validators/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="158">
+              <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-                <marker date="1508052601000" expanded="true" signature="648:1693" ph="..." />
-                <marker date="1508052601000" expanded="true" signature="660:857" ph="..." />
-                <marker date="1508052601000" expanded="true" signature="870:1063" ph="..." />
-                <marker date="1508052601000" expanded="true" signature="1107:1606" ph="..." />
-                <marker date="1508052601000" expanded="true" signature="1121:1352" ph="..." />
-                <marker date="1508052601000" expanded="true" signature="1367:1593" ph="..." />
+                <marker date="1511294174000" expanded="true" signature="648:1693" ph="..." />
+                <marker date="1511294174000" expanded="true" signature="660:857" ph="..." />
+                <marker date="1511294174000" expanded="true" signature="870:1063" ph="..." />
+                <marker date="1511294174000" expanded="true" signature="1107:1606" ph="..." />
+                <marker date="1511294174000" expanded="true" signature="1121:1352" ph="..." />
+                <marker date="1511294174000" expanded="true" signature="1367:1593" ph="..." />
               </folding>
             </state>
           </provider>
@@ -124,14 +106,14 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/three-validators/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="69" />
+            <state relative-caret-position="152">
+              <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding>
-                <marker date="1507982945000" expanded="true" signature="147:886" ph="..." />
-                <marker date="1507982945000" expanded="true" signature="160:803" ph="..." />
-                <marker date="1507982945000" expanded="true" signature="235:418" ph="..." />
-                <marker date="1507982945000" expanded="true" signature="473:789" ph="..." />
-                <marker date="1507982945000" expanded="true" signature="1015:1047" ph="{...}" />
+                <marker date="1511385675000" expanded="true" signature="147:901" ph="..." />
+                <marker date="1511385675000" expanded="true" signature="160:803" ph="..." />
+                <marker date="1511385675000" expanded="true" signature="235:418" ph="..." />
+                <marker date="1511385675000" expanded="true" signature="473:789" ph="..." />
+                <marker date="1511385675000" expanded="true" signature="832:889" ph="..." />
               </folding>
             </state>
           </provider>
@@ -140,8 +122,28 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="19">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tslint.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tslint.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,6 +161,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>tou</find>
+      <find>usern</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,13 +178,14 @@
         <option value="$PROJECT_DIR$/src/app/template-validator/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/dynamic-form-controls/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/two-validators/app.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/three-validators/app.component.ts" />
         <option value="$PROJECT_DIR$/src/main-group-validator.ts" />
-        <option value="$PROJECT_DIR$/src/app/group-validators/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/reactive-validator/app.component.ts" />
         <option value="$PROJECT_DIR$/.angular-cli.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/dynamic-validator/app.component.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/app/group-validators/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/three-validators/app.component.ts" />
       </list>
     </option>
   </component>
@@ -202,7 +206,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1261" />
     <option name="height" value="773" />
@@ -222,7 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,20 +249,6 @@
               <item name="form-samples" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic-validator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="form-samples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="form-samples" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="formbuilder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="form-samples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="form-samples" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="reactive-validator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,6 +262,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -403,14 +393,15 @@
       <workItem from="1506016141881" duration="5869000" />
       <workItem from="1507664788349" duration="5565000" />
       <workItem from="1507903631827" duration="36224000" />
+      <workItem from="1511266074383" duration="8913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108025000" />
+    <option name="totallyTimeSpent" value="116938000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1261" height="773" extended-state="1" />
+    <frame x="0" y="23" width="1261" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -472,18 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/dynamic-form-controls/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <marker date="1507943468000" expanded="true" signature="218:547" ph="..." />
-            <marker date="1507943468000" expanded="true" signature="348:491" ph="..." />
-            <marker date="1507943468000" expanded="true" signature="425:479" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -667,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tslint.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/template-validator/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -729,18 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/reactive/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1488895583000" expanded="true" signature="207:638" ph="..." />
-            <marker date="1488895583000" expanded="true" signature="394:582" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/async-validator/ssn-validator.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -765,9 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,7 +733,7 @@
         <state relative-caret-position="285">
           <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="false" />
             <marker date="1495546334000" expanded="true" signature="597:959" ph="..." />
             <marker date="1495546334000" expanded="true" signature="597:1108" ph="..." />
           </folding>
@@ -785,78 +742,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main-group-validator.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="57">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.angular-cli.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="4826">
           <caret line="254" column="7" lean-forward="false" selection-start-line="254" selection-start-column="7" selection-end-line="254" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/dynamic-validator/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="190">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/reactive-validator/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
-            <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/three-validators/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="69" />
-          <folding>
-            <marker date="1507982945000" expanded="true" signature="147:886" ph="..." />
-            <marker date="1507982945000" expanded="true" signature="160:803" ph="..." />
-            <marker date="1507982945000" expanded="true" signature="235:418" ph="..." />
-            <marker date="1507982945000" expanded="true" signature="473:789" ph="..." />
-            <marker date="1507982945000" expanded="true" signature="1015:1047" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/group-validators/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1508052601000" expanded="true" signature="648:1693" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="660:857" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="870:1063" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="1107:1606" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="1121:1352" ph="..." />
-            <marker date="1508052601000" expanded="true" signature="1367:1593" ph="..." />
           </folding>
         </state>
       </provider>
@@ -864,7 +771,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/formbuilder/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
             <marker date="1483536428000" expanded="true" signature="208:639" ph="..." />
@@ -875,20 +782,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/forms/src/model.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="140" column="32" lean-forward="false" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
+        <state relative-caret-position="2584">
+          <caret line="137" column="32" lean-forward="false" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/dynamic-validator/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+        <state relative-caret-position="332">
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <marker date="1508725053000" expanded="true" signature="216:591" ph="..." />
             <marker date="1508725053000" expanded="true" signature="458:579" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/reactive/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1488895583000" expanded="true" signature="207:638" ph="..." />
+            <marker date="1488895583000" expanded="true" signature="394:582" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/group-validators/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1511294174000" expanded="true" signature="648:1693" ph="..." />
+            <marker date="1511294174000" expanded="true" signature="660:857" ph="..." />
+            <marker date="1511294174000" expanded="true" signature="870:1063" ph="..." />
+            <marker date="1511294174000" expanded="true" signature="1107:1606" ph="..." />
+            <marker date="1511294174000" expanded="true" signature="1121:1352" ph="..." />
+            <marker date="1511294174000" expanded="true" signature="1367:1593" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/three-validators/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <marker date="1511385675000" expanded="true" signature="147:901" ph="..." />
+            <marker date="1511385675000" expanded="true" signature="160:803" ph="..." />
+            <marker date="1511385675000" expanded="true" signature="235:418" ph="..." />
+            <marker date="1511385675000" expanded="true" signature="473:789" ph="..." />
+            <marker date="1511385675000" expanded="true" signature="832:889" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/reactive-validator/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1508104500000" expanded="true" signature="421:654" ph="..." />
+            <marker date="1508104500000" expanded="true" signature="551:642" ph="..." />
           </folding>
         </state>
       </provider>

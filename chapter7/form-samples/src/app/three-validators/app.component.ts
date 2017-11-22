@@ -19,7 +19,8 @@ import { Component } from '@angular/core';
         </div>
 
       </div>
-      <button type="submit" [disabled]="!f.form.valid">Submit</button>
+      <button type="submit" 
+              [disabled]="!f.form.valid">Submit</button>
     </form>
   `,
   styles: ['.error {color: red;} .hasError {border: 1px solid red;}']

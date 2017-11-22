@@ -19,8 +19,8 @@ function equalValidator({value}: FormGroup): {[key: string]: any} {
     <form [formGroup]="formModel" (ngSubmit)="onSubmit()">
       <div>
         Username:
-        <input type="text" formControlName="username">
-        <span class="error" [hidden]="!formModel.hasError('required', 'username')">Username is required</span>
+        <input type="text" formControlName="userName">
+        <span class="error" [hidden]="!formModel.hasError('required', 'userName')">Username is required</span>
       </div>
 
       <div>
@@ -53,7 +53,7 @@ export class AppComponent {
 
   constructor(fb: FormBuilder) {  
     this.formModel = fb.group({
-      'username': ['', Validators.required], 
+    'userName': ['', Validators.required], 
     'socialSecurity': ['', ssnValidator],
     'passwordsGroup': fb.group({
     'password': ['', Validators.minLength(5)],
