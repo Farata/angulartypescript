@@ -10,7 +10,6 @@ import { routes } from './app.routing';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {RouterModule} from '@angular/router';
 
-import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material/core';
 import { ProductService } from './shared/services';
 import {HttpClientModule} from '@angular/common/http';
 
@@ -28,8 +27,7 @@ import {HttpClientModule} from '@angular/common/http';
     RouterModule.forRoot(routes),
     HttpClientModule
   ],
-  providers: [{ provide: MATERIAL_COMPATIBILITY_MODE, useValue: true },
-              ProductService],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
