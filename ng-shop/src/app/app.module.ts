@@ -20,6 +20,7 @@ import { CartComponent, CartResolver } from './cart';
 import { HomeComponent, ProductTileComponent  } from './home';
 import { ProductComponent, ProductDetailsComponent } from './product';
 import { ProductService, ShoppingCartService } from './shared/services';
+import {MatFormFieldModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ProductService, ShoppingCartService } from './shared/services';
     MatSelectModule,
     MatTabsModule,
     MatToolbarModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule
   ],
   providers: [
     CartResolver,
