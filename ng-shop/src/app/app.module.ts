@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
-import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
@@ -50,7 +49,6 @@ import { ProductService, ShoppingCartService } from './shared/services';
     MatToolbarModule
   ],
   providers: [
-    { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true },
     CartResolver,
     ProductService,
     ShoppingCartService
