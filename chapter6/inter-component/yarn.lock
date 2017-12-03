@@ -32,13 +32,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/cdk@^5.0.0-rc0":
-  version "5.0.0-rc0"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-5.0.0-rc0.tgz#b7225af1d8d23c13ac14bbd3fe1c6b427eb71368"
-  dependencies:
-    tslib "^1.7.1"
-
-"@angular/cli@^1.5.5":
+"@angular/cli@^1.5.2":
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.5.5.tgz#400ef304d88b13a82a72a4c4c42e2b53a0db04fd"
   dependencies:
@@ -144,12 +138,6 @@
 "@angular/language-service@^5.0.0":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.0.5.tgz#5019bdea93aa8a3c45a83eb521064916dea30e6f"
-
-"@angular/material@^5.0.0-rc0":
-  version "5.0.0-rc0"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-5.0.0-rc0.tgz#d37e104a284b41084f91e7613ac119cfb627c56d"
-  dependencies:
-    tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@^5.0.0":
   version "5.0.5"
@@ -992,7 +980,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codelyzer@~4.0.1:
+codelyzer@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-4.0.1.tgz#0bb4cf52a325b257790f4980bb3c63833db10789"
   dependencies:
@@ -4844,12 +4832,6 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.0.tgz#26d8f3866eb700e247e0728a147c3d628993d812"
-  dependencies:
-    symbol-observable "^1.0.1"
-
 rxjs@^5.5.2:
   version "5.5.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.3.tgz#b62227e74b84f4e77bdf440e50b5ee01a1bc7dcd"
@@ -5617,15 +5599,15 @@ typescript@~2.6.1:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
 
 uglify-es@^3.1.3:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.2.1.tgz#93de0aad8a1bb629c8a316f686351bc4d6ece687"
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.2.0.tgz#fbbfb9dc465ec7e5065701b9720d0de977d0bc24"
   dependencies:
     commander "~2.12.1"
     source-map "~0.6.1"
 
 uglify-js@3.2.x:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.2.1.tgz#d6427fd45a25fefc5d196689c0c772a6915e10fe"
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.2.0.tgz#cb411ee4ca0e0cadbfe3a4e1a1da97e6fa0d19c1"
   dependencies:
     commander "~2.12.1"
     source-map "~0.6.1"
