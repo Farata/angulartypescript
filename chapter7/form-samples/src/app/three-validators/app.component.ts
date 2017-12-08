@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
 
       </div>
       <button type="submit" 
-              [disabled]="!f.form.valid">Submit</button>
+              [disabled]="f.invalid">Submit</button>
     </form>
   `,
   styles: ['.error {color: red;} .hasError {border: 1px solid red;}']

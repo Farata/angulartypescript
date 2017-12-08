@@ -5,8 +5,6 @@ import {ProductDetailComponent} from "./product.component";
 @Injectable()
 export class UnsavedChangesGuard implements CanDeactivate<ProductDetailComponent>{
 
-  constructor(private _router:Router){}
-
   canDeactivate(component: ProductDetailComponent){
 
     if (component.name.dirty) {

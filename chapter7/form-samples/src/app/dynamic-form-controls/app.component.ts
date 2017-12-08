@@ -20,7 +20,7 @@ import {FormControl, FormArray, FormGroup} from "@angular/forms";
   `
 })
 export class AppComponent {
-  formModel: FormGroup = new FormGroup({
+  formModel = new FormGroup({
     emails: new FormArray([
       new FormControl()
     ])

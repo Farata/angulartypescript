@@ -24,7 +24,7 @@ export class AppComponent {
 
   constructor() {
     this.myForm = new FormGroup({
-      'socialSecurity': new FormControl('', ssnValidator)
+      socialSecurity: new FormControl('', ssnValidator)
     });
   }
 }

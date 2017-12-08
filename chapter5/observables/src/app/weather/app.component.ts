@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
   private baseWeatherURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
   private urlSuffix = "&units=imperial&appid=ca3f6d6ca3973a518834983d0b318f73";
 
-  searchInput: FormControl = new FormControl();
+  searchInput = new FormControl();
   weather: string;
 
   constructor(private http:HttpClient){ }

@@ -15,7 +15,7 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class AppComponent {
 
-  searchInput: FormControl = new FormControl('');
+  searchInput = new FormControl('');
 
   constructor(){
 

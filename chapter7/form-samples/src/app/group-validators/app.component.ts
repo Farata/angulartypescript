@@ -43,7 +43,7 @@ function equalValidator({value}: FormGroup): {[key: string]: any} {
         </div>
       </div>
 
-      <button type="submit" [disabled]="!formModel.valid">Submit</button>
+      <button type="submit" [disabled]="formModel.invalid">Submit</button>
     </form>
   `,
   styles: ['.error {color: red;} ']
@@ -53,12 +53,12 @@ export class AppComponent {
 
   constructor(fb: FormBuilder) {  
     this.formModel = fb.group({
-    'userName': ['', Validators.required], 
-    'socialSecurity': ['', ssnValidator],
-    'passwordsGroup': fb.group({
-    'password': ['', Validators.minLength(5)],
-    'pconfirm': ['']
-  }, {validator: equalValidator}) 
+    userName: ['', Validators.required], 
+    socialSecurity: ['', ssnValidator],
+    passwordsGroup: fb.group({
+      password: ['', Validators.minLength(5)],
+      pconfirm: ['']
+    }, {validator: equalValidator}) 
   });
   }
 
