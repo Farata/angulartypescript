@@ -5,7 +5,7 @@
   },
   "apps": [
     {
-      "name": "rest",
+      "name": "restclient",
       "root": "src",
       "outDir": "dist",
       "assets": [

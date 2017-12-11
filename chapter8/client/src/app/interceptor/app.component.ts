@@ -1,6 +1,4 @@
-/*
-  In this code we use HttpClient introduced in Angular 4.3
- */
+
 import { HttpClient} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import { Observable} from "rxjs/Observable";
@@ -17,7 +15,7 @@ import {Component} from "@angular/core";
   `})
 export class AppComponent {
 
-  products: Array<string> = [];
+ /* products: Array<string> = [];
 
   theDataSource: Observable<string>;
 
@@ -41,5 +39,6 @@ export class AppComponent {
         console.log("Can't get products. Error code: %s, URL: %s ",  err.status, err.url),
       () => console.log('Product(s) are retrieved')
     );
-  }
+  }*/
 }
+

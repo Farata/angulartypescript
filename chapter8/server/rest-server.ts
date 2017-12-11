@@ -2,20 +2,19 @@ import * as express from "express";
 
 const app = express();
 
-class Product {
-    constructor(
-        public id: number,
-        public title: string,
-        public price: number){}
+interface IProduct {
+    id: number,
+    title: string,
+    price: number
 }
 
-const products = [
-    new Product(0, "First Product", 24.99),
-    new Product(1, "Second Product", 64.99),
-    new Product(2, "Third Product", 74.99)
+const products: IProduct[] = [
+    { id:0, title: "First Product", price: 24.99 },
+    { id:1, title: "Second Product", price: 64.99 },
+    { id:2, title: "Third Product", price: 74.99}
 ];
 
-function getProducts(): Product[] {
+function getProducts(): IProduct[] {
     return products;
 }
 
@@ -27,7 +26,7 @@ app.get('/api/products', (req, res) => {
     res.json(getProducts());
 });
 
-function getProductById(productId: number): Product {
+function getProductById(productId: number): IProduct {
     return products.find(p => p.id === productId);
 }
 
@@ -37,5 +36,5 @@ app.get('/api/products/:id', (req, res) => {
 
 const server = app.listen(8000, "localhost", () => {
     const {address, port} = server.address();
-    console.log('Listening on %s %s', address, port);
+    console.log(`Listening on ${address}:${port}`);
 });
