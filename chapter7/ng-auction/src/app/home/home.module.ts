@@ -7,11 +7,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductGridComponent } from './product-grid/product-grid.component';
-import { SearchComponent } from './search/search.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'categories' },
-  { path: 'search', component: SearchComponent },
+  { path: 'search-results', component: SearchResultsComponent },
   { path: 'categories',
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'all' },
@@ -31,7 +31,7 @@ const routes: Route[] = [
   declarations: [
     CategoriesComponent,
     ProductGridComponent,
-    SearchComponent
+    SearchResultsComponent
   ]
 })
 export class HomeModule {}

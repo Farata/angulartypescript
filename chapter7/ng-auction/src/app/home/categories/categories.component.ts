@@ -12,14 +12,14 @@ import { Product, ProductService } from '../../shared/services';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CategoriesComponent {
-  readonly categories$: Observable<string[]>;
+  readonly categoriesNames$: Observable<string[]>;
   readonly products$: Observable<Product[]>;
 
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute
   ) {
-    this.categories$ = this.productService.getAllCategories().pipe(
+    this.categoriesNames$ = this.productService.getDistinctCategories().pipe(
       map(categories => ['all', ...categories]));
 
     this.products$ = this.route.params.pipe(

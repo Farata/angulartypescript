@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 
 export interface Product {
   id: number;
@@ -36,11 +36,19 @@ export class ProductService {
       map(products => products.filter(p => p.categories.includes(category))));
   }
 
-  getAllCategories(): Observable<string[]> {
+/**
+ *  Return distinct category names
+ *  First select all categories and then create a set with unique category names
+ *  We use the tap() operator to illustrate debugging of observables
+ */
+  getDistinctCategories(): Observable<string[]> {
     return this.http.get<Product[]>('/data/products.json')
       .pipe(
+        tap(value => console.log('Before reducing categories', JSON.stringify(value[0]['categories']))),
         map(this.reduceCategories),
-        map(categories => Array.from(new Set(categories)))
+        tap(value => console.log(`After reducing categories ${value}`)),
+        map(categories => Array.from(new Set(categories))),
+        tap(value => console.log(`After creating categories array ${value}`))
       );
   }
 
@@ -50,10 +58,12 @@ export class ProductService {
     );
   }
 
+  // Populate an array with categories values of each product
   private reduceCategories(products: Product[]): string[] {
     return products.reduce((all, product) => all.concat(product.categories), new Array<string>());
   }
 
+  // Keep only those product that meet the criteria from search params
   private filterProducts(products: Product[], params: ProductSearchParams): Product[] {
     return products
       .filter(p => params.title ? p.title.toLowerCase().includes((<string>params.title).toLowerCase()) : products)

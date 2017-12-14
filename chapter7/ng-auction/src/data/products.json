@@ -6,7 +6,7 @@
     "price" : 300,
     "title" : "Vintage Bluetooth Radio",
     "categories": [
-      "fruits"
+      "household"
     ]
   },
   {
@@ -17,7 +17,7 @@
     "price" : 70,
     "title" : "Sunglasses",
     "categories": [
-      "vegetables"
+      "outdoor"
     ]
   },
   {
@@ -28,7 +28,7 @@
     "price" : 120,
     "title" : "Clock",
     "categories": [
-      "fruits"
+      "household"
     ]
   },
   {
@@ -39,7 +39,7 @@
     "price" : 300,
     "title" : "Red Popsicle",
     "categories": [
-      "vegetables"
+      "outdoor"
     ]
   },
   {
@@ -50,7 +50,7 @@
     "price" : 75,
     "title" : "Green Slip-ons",
     "categories": [
-      "fruits"
+      "household"
     ]
   },
   {
@@ -61,7 +61,7 @@
     "price" : 210,
     "title" : "Teapot",
     "categories": [
-      "vegetables"
+      "household"
     ]
   },
   {
@@ -71,7 +71,7 @@
     "price" : 89,
     "title" : "Blue suede shoes",
     "categories": [
-      "fruits"
+      "outdoor"
     ]
   },
   {
@@ -81,7 +81,7 @@
     "price" : 25,
     "title" : "Dipped Brush",
     "categories": [
-      "vegetables"
+      "outdoor"
     ]
   },
   {
@@ -91,7 +91,7 @@
     "price" : 25,
     "title" : "Perfect Goldfish Bowl",
     "categories": [
-      "fruits"
+      "household"
     ]
   },
   {
@@ -101,7 +101,7 @@
     "price" : 25,
     "title" : "Red Lipstick Set",
     "categories": [
-      "vegetables"
+      "outdoor"
     ]
   },
   {
@@ -111,7 +111,7 @@
     "price" : 25,
     "title" : "Backpack",
     "categories": [
-      "fruits"
+      "outdoor"
     ]
   },
   {
@@ -121,7 +121,7 @@
     "price" : 25,
     "title" : "Half Shield Helmet",
     "categories": [
-      "vegetables"
+      "outdoor"
     ]
   },
   {
@@ -131,7 +131,7 @@
     "price" : 25,
     "title" : "Beachball",
     "categories": [
-      "fruits"
+      "outdoor"
     ]
   },
   {
@@ -141,7 +141,7 @@
     "price" : 25,
     "title" : "Old Binoculars",
     "categories": [
-      "vegetables"
+      "outdoor"
     ]
   },
   {
@@ -151,7 +151,7 @@
     "price" : 25,
     "title" : "Lime Flippers",
     "categories": [
-      "fruits"
+      "outdoor"
     ]
   },
   {
@@ -161,7 +161,7 @@
     "price" : 25,
     "title" : "Surfboard",
     "categories": [
-      "vegetables"
+      "outdoor"
     ]
   }
 ]

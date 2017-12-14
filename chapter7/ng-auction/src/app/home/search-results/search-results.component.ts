@@ -6,11 +6,11 @@ import { Product, ProductService } from '../../shared/services';
 
 @Component({
   selector: 'nga-search',
-  styleUrls: [ './search.component.scss' ],
-  templateUrl: './search.component.html',
+  styleUrls: [ './search-results.component.scss' ],
+  templateUrl: './search-results.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SearchComponent {
+export class SearchResultsComponent {
   readonly products$: Observable<Product[]>;
 
   constructor(

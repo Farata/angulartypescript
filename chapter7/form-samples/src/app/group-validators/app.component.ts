@@ -59,7 +59,7 @@ export class AppComponent {
       password: ['', Validators.minLength(5)],
       pconfirm: ['']
     }, {validator: equalValidator}) 
-  });
+   });
   }
 
   onSubmit() {

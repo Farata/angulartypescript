@@ -13,8 +13,9 @@
 
   <mat-form-field class="form__field">
     <input matInput type="number" placeholder="Max price" formControlName="maxPrice" [errorStateMatcher]="matcher">
-    <mat-error *ngIf="searchForm.controls['maxPrice'].hasError('min')">Cannot be less than 0.</mat-error>
-    <mat-error *ngIf="searchForm.hasError('minLessThanMax')">Should be larger than min price.</mat-error>
+    <mat-error *ngIf="searchForm.controls['maxPrice'].hasError('min')">Cannot be less than 0</mat-error>
+    <mat-error *ngIf="searchForm.controls['maxPrice'].hasError('max')">Cannot be more than 10000</mat-error>
+    <mat-error *ngIf="searchForm.hasError('minLessThanMax')">Should be larger than min price</mat-error>
   </mat-form-field>
 
   <button class="form__submit"
