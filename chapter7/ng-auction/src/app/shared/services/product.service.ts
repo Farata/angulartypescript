@@ -39,7 +39,9 @@ export class ProductService {
 /**
  *  Return distinct category names
  *  First select all categories and then create a set with unique category names
- *  We use the tap() operator to illustrate debugging of observables
+ *  We use the lettable tap() operator to illustrate debugging of observables
+ *
+ *  See https://github.com/ReactiveX/rxjs/blob/master/doc/lettable-operators.md
  */
   getDistinctCategories(): Observable<string[]> {
     return this.http.get<Product[]>('/data/products.json')
