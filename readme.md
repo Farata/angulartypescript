@@ -8,6 +8,8 @@ In other chapters, multiple code sample apps are included in the same project, e
 
 You can read more about configuring multiple apps in the same project here: https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project
 
+In chapters 5,6, and 7 we build an ngAuction app that uses Angular Material and Flex Layout libraries.
+
 Consider watching the video Angular Applied where Yakov Fain shows how to build apps from scratch using Angular CLI: http://bit.ly/2iiKjDV
 
 
