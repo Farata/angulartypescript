@@ -1,4 +1,4 @@
-This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. Currently only some code samples migrated to Angular 5.
+This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. All code samples use Angular 5.
 
 We used Angular CLI 1.5.0 for projects generation. Install it globally to run these samples.
 
