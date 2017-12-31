@@ -1,0 +1,20 @@
+@import './palette';
+
+// This is a simple way to implement a badge exclusively with CSS.
+.ngs-badge[data-badge] {
+  position: relative;
+
+  &:after {
+    content: attr(data-badge);
+    color: mat-color($ngs-primary, default-contrast);
+    background: mat-color($ngs-foreground, text);
+    border-radius: 50%;
+    line-height: 22px;
+    font-size: 12px;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+  }
+}

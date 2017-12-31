@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <span class="fill"></span>
+  <a routerLink="/">
+  <img class="logo" src="assets/ngshop-logo.svg" alt="NgShop Logo">
+  </a>
+  <span class="fill"></span>
+
+  <a mat-icon-button
+     class="ngs-badge"
+     routerLink="/cart"
+     [attr.data-badge]="cartTotalQuantity">
+    <mat-icon>shopping_cart</mat-icon>
+  </a>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

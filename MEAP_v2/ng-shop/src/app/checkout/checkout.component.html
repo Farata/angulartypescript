@@ -1,0 +1,152 @@
+<header>
+  <h1>Checkout</h1>
+  <span>NgShop is a demo application - the payment method data are neither stored nor processed</span>
+</header>
+
+<form novalidate
+      class="grid"
+      [formGroup]="formModel"
+      (ngSubmit)="placeOrder()">
+  <section>
+    <div formGroupName="account">
+      <h2>Account Information</h2>
+
+      <div class="row">
+        <mat-form-field>
+          <input matInput
+                 required
+                 autofocus
+                 type="email"
+                 placeholder="Email"
+                 formControlName="email">
+          <mat-hint class="error" *ngIf="hasError('required', ['account', 'email'])">Email is required</mat-hint>
+          <mat-hint class="error" *ngIf="hasError('pattern', ['account', 'email'])">Email is invalid</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field>
+          <input matInput
+                 required
+                 type="tel"
+                 placeholder="Phone Number"
+                 formControlName="phone">
+          <mat-hint class="error" *ngIf="hasError('required', ['account', 'phone'])">Phone is required</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div formGroupName="address">
+      <h2>Shipping Address</h2>
+
+      <div class="row">
+        <mat-form-field>
+          <input matInput
+                 required
+                 type="text"
+                 placeholder="Address"
+                 formControlName="line1">
+          <mat-hint class="error" *ngIf="hasError('required', ['address', 'line1'])">Address is required</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field>
+          <input matInput
+                 required
+                 type="text"
+                 placeholder="City"
+                 formControlName="city">
+          <mat-hint class="error" *ngIf="hasError('required', ['address', 'city'])">City is required</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field>
+          <input matInput
+                 required
+                 type="text"
+                 placeholder="State/Province"
+                 formControlName="state">
+          <mat-hint class="error" *ngIf="hasError('required', ['address', 'state'])">State is required</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field [dividerColor]="hasError('required', ['address', 'zip']) ? 'warn': 'default'">
+          <input matInput
+                 required
+                 type="tel"
+                 name="shipZip"
+                 placeholder="Zip/Postal Code"
+                 formControlName="zip">
+          <mat-hint class="error" *ngIf="hasError('required', ['address', 'zip'])">Zip code is required</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-select required
+                   placeholder="Country"
+                   formControlName="country">
+          <mat-option value="US">United States</mat-option>
+          <mat-option calue="CA">Canada</mat-option>
+        </mat-select>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div formGroupName="payment">
+      <h2>Payment Method</h2>
+
+      <div class="row">
+        <mat-form-field>
+          <input matInput
+                 required
+                 type="text"
+                 placeholder="Cardholder Name"
+                 formControlName="cardholder">
+          <mat-hint class="error" *ngIf="hasError('required', ['payment', 'cardholder'])">Cardholder name is required</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field>
+          <input matInput
+                 required
+                 type="tel"
+                 placeholder="Card Number"
+                 formControlName="cardNumber">
+          <mat-hint class="error" *ngIf="hasError('required', ['payment', 'cardNumber'])">Card number is required</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <div class="row expiry" formGroupName="expiry">
+        <div>
+          <label>Expiry</label>
+          <mat-select formControlName="month">
+            <mat-option *ngFor="let m of months" [value]="m">{{ m }}</mat-option>
+          </mat-select>
+        </div>
+
+        <mat-select formControlName="year">
+          <mat-option *ngFor="let y of years" [value]="y">{{ y }}</mat-option>
+        </mat-select>
+
+        <mat-form-field floatingPlaceholder="false">
+          <input matInput
+                 required
+                 type="tel"
+                 formControlName="cvv"
+                 placeholder="CVV">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <h2>Order Summary</h2>
+
+    <div class="row">
+      <button mat-raised-button
+              color="primary"
+              type="submit">PLACE ORDER</button>
+    </div>
+  </section>
+</form>

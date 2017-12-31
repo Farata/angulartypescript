@@ -1,0 +1,28 @@
+@import '../../../styles/palette';
+
+:host {
+  background: mat-color($ngs-background, card);
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+
+  // Children layout
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  background: no-repeat 50% 50%;
+  background-size: contain;
+  height: 50%;
+  width: 50%;
+}
+
+.title {
+  color: mat-color($ngs-foreground, text);
+  font-family: $ngs-brand-font;
+  font-size: 34px;
+}

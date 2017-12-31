@@ -1,0 +1,50 @@
+== How things are done in Angular 
+
+To give you a taste of how things done in Angular, we came up with table 1.1, which lists the tasks that you may want to do (the left column) and what the Angular/TypeScript combo offers to accomplish this task (the right column). This is not a complete list of tasks that you can do, and we show you just fragments of the syntax but it may help you to get general idea. All these features will be explained later in the book.
+
+.How things are done in Angular
+|===
+|Task                 |How
+
+|Generate a new project| Use the Angular CLI command `ng new`.
+
+|Bundle and serve your app in dev mode| Use the Angular CLI command `ng serve`.
+
+|Automate prod deployment| Use npm scripts as wrappers to Angular CLI commands.
+
+|Implement business logic|Create a class and Angular will instantiate and inject it into your component. You can also use the `new` operator.
+
+|Implement a component with UI|Create a class decorated with `@Component`
+
+|Specify the HTML template to be rendered by a component|Either inline the HTML code in the `@Component` annotation using its `template` property, or specify the name of the HTML file in `templateUrl` 
+
+|Manipulate HTML| Use one of the structural directives (`*ngIf`, `*ngFor`) or create a custom directive - a class annotated with `@Directive`
+
+|Refer to the class variable on the current object | Use the `this` keyword: `this.userName="Mary";`
+
+|Arrange navigation on a single-page app| Configure the router mapping the URL segments to components, and add the `<router-outlet>` tag to the template where you want the component to be rendered
+
+|Display a value of a component’s property on the UI|Place the variables inside double curly brackets on the template: `{{customerName}}`  
+
+|Bind a component property to the UI element| Use property binding with square brackets: 
+`<input [value]="greeting" >`
+
+|Handle UI events|Surround the event name with parentheses and specify the handler method: 
+`<button (click)="onClickEvent()">Get Products</button>`
+
+|Use two-way binding| Use the `[()]` notation: 
+`<input [(ngModel)] = "myComponentProperty">`
+|Pass data to a component| Annotate component properties as `@Input` and bind the values to it
+
+|Pass data from a component|Annotate component properties as `@Output` and use `EventEmitter` to emit events
+
+|Make an HTTP request|Inject the `HttpClient` object into a component and invoke one of the HTTP methods: 
+`this.httpClient.get('/products')`
+
+|Handle HTTP responses|Use the `subscribe()` method on the result that arrives as an observable stream: 
+`this.httpClient.get('/products').subscribe(...);`
+
+|Pass an HTML fragment to a child component|Use the projection feature by using the `<ng-content>` tag
+
+|Intercept important event in the component's lifecycle|Implement the component’s lifecycle interfaces, e.g. `OnInit()`
+|===

@@ -1,0 +1,35 @@
+<div class="content" [formGroup]="formModel">
+  <div class="cart-item" *ngFor="let p of products">
+
+    <div class="cart-item-image">
+      <img [attr.src]="p.imageUrl" [attr.alt]="p.title">
+    </div>
+
+    <div class="cart-item-title">
+      <a [routerLink]="['/products', p.id]">{{ p.title }}</a>
+    </div>
+
+    <div class="cart-item-quantity">
+      <mat-form-field>
+        <input matInput
+               type="number" min="0"
+               placeholder="Quantity"
+               [formControlName]="p.id">
+      </mat-form-field>
+    </div>
+
+    <div class="cart-item-price">{{ p.price | currency:'USD':true }}</div>
+
+    <div class="cart-item-remove">
+      <button mat-icon-button (click)="removeItem(p.id)">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="cart-actions">
+    Total:
+    <div class="total">{{ total | currency:'USD':true }}</div>
+    <a mat-raised-button routerLink="/checkout">CHECKOUT</a>
+  </div>
+</div>

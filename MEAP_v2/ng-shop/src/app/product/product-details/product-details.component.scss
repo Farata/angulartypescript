@@ -1,0 +1,56 @@
+@import '../../../styles/palette';
+
+:host {
+  padding: 128px 0 64px;
+
+  // Children layout
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.image {
+  width: 40vmin; // 1/100 of the smallest viewport side
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.content {
+  flex: 0 1 400px;
+
+  h1 {
+    color: mat-color($ngs-foreground, text);
+    font-family: $ngs-brand-font;
+    font-size: 45px; // Display 2
+    font-weight: 300;
+    line-height: 1.5em;
+
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+}
+
+.quantity {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+
+  mat-select {
+    font-size: 16px;
+    flex: 0 1 200px;
+    max-width: 200px;
+    margin-right: 20px;
+  }
+
+  button {
+    color: mat-color($ngs-foreground, secondary-text);
+  }
+}

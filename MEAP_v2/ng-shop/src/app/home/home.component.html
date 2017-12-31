@@ -1,0 +1,13 @@
+<mat-tab-group (selectedIndexChange)="onTabChange($event)">
+  <mat-tab *ngFor="let c of categories" [label]="c | uppercase"></mat-tab>
+</mat-tab-group>
+
+<div class="grid-list-container">
+  <mat-grid-list cols="3" gutterSize="16">
+    <mat-grid-tile *ngFor="let p of products | async">
+      <ngs-product-tile [product]="p"
+                        [routerLink]="['/products', p.id]">>
+      </ngs-product-tile>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

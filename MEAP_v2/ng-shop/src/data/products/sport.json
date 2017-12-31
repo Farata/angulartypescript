@@ -1,0 +1,52 @@
+[
+  {
+    "id": "-KaXyvdw5gmuBmGi5unb",
+    "description" : "Be an optimist. Carry Sunglasses with you at all times. All Tints and Shades products come with polarized lenses and super duper UV protection so you can look at the sun for however long you want. Sunglasses make you look cool, wear them.",
+    "featured" : true,
+    "imageUrl" : "data/products/img/sunnies.png",
+    "price" : 70,
+    "title" : "Sunglasses"
+  },
+  {
+    "id": "-KaXzaIxlJMtFDyj-_nd",
+    "description" : "This backpack by Bags ‘n’ stuff can hold just about anything: a laptop, a pen, a protractor, notebooks, small animals, plugs for your devices, sunglasses, gym clothes, shoes, gloves, two kittens, and even lunch!",
+    "imageUrl" : "data/products/img/backpack.png",
+    "price" : 25,
+    "title" : "Backpack"
+  },
+  {
+    "id": "-KaXzkuJYgSDLofeUYK8",
+    "description" : "Half Shield is the right helmet for those warm summer days on the road. Dot approved, these helmets have been rigorously tested. Keep that noggin protected.",
+    "imageUrl" : "data/products/img/helmet.png",
+    "price" : 25,
+    "title" : "Half Shield Helmet"
+  },
+  {
+    "id": "-KaXzn9pbvjIER-jKWFK",
+    "description" : "Are you at a baseball game and feeling bored? At a pool party and looking for a laugh? Do you need something to take your anger out on? Beachball, by inflatable fun, is the perfect outlet.",
+    "imageUrl" : "data/products/img/beachball.png",
+    "price" : 25,
+    "title" : "Beachball"
+  },
+  {
+    "id": "-KaXzq-qbt8pGDUd0cgU",
+    "description" : "These Binoculars by See Through are amazing and can make things that are really far away seem like they’re right in front of you. Bring them to the beach. Now you can buy the cheap seats at the big game and feel like you’re right in the action.",
+    "imageUrl" : "data/products/img/binoculars.png",
+    "price" : 25,
+    "title" : "Old Binoculars"
+  },
+  {
+    "id": "-KaXzsRESfsFn5oEHANj",
+    "description" : "Flippers are a nice tool to have when you’re being chased by an oversized sea turtle. Never get caught again with these fast water shoes. You’re like a fish, but more graceful.",
+    "imageUrl" : "data/products/img/flippers.png",
+    "price" : 25,
+    "title" : "Lime Flippers"
+  },
+  {
+    "id": "-KaXzv43K-oIizW9vA4D",
+    "description" : "Who says you can’t walk on water? With Surfboard, by Surfboard Supply, you can fly on water. This beast is fast and handles like a porsche. Hang Ten Bro!",
+    "imageUrl" : "data/products/img/surfboard.png",
+    "price" : 25,
+    "title" : "Surfboard"
+  }
+]

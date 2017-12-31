@@ -1,0 +1,24 @@
+[
+  {
+    "id": "-KaXyvdw5gmuBmGi5unb",
+    "description" : "Be an optimist. Carry Sunglasses with you at all times. All Tints and Shades products come with polarized lenses and super duper UV protection so you can look at the sun for however long you want. Sunglasses make you look cool, wear them.",
+    "featured" : true,
+    "imageUrl" : "data/products/img/sunnies.png",
+    "price" : 70,
+    "title" : "Sunglasses"
+  },
+  {
+    "id": "-KaXzn9pbvjIER-jKWFK",
+    "description" : "Are you at a baseball game and feeling bored? At a pool party and looking for a laugh? Do you need something to take your anger out on? Beachball, by inflatable fun, is the perfect outlet.",
+    "imageUrl" : "data/products/img/beachball.png",
+    "price" : 25,
+    "title" : "Beachball"
+  },
+  {
+    "id": "-KaXzv43K-oIizW9vA4D",
+    "description" : "Who says you can’t walk on water? With Surfboard, by Surfboard Supply, you can fly on water. This beast is fast and handles like a porsche. Hang Ten Bro!",
+    "imageUrl" : "data/products/img/surfboard.png",
+    "price" : 25,
+    "title" : "Surfboard"
+  }
+]

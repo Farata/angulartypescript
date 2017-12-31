@@ -1,0 +1,65 @@
+@import '../../styles/theme';
+
+:host {
+  display: block;
+}
+
+.grid-list-container {
+  margin: 16px;
+}
+
+.tile {
+  background-color: mat-color($nga-background, card);
+
+  &:hover {
+    @include mat-elevation(4);
+    transition: .3s;
+  }
+}
+
+.tile__content {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tile__price-tag {
+  color: mat-color($nga-foreground, text);
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.tile__price-tag--xs {
+  font-size: 14px;
+}
+
+.tile__thumbnail {
+  background: no-repeat 50% 50%;
+  background-size: contain;
+  height: 50%;
+  width: 50%;
+}
+
+.tile__title {
+  color: mat-color($nga-foreground, text);
+  font-family: 'Abril Fatface', cursive;
+  font-size: mat-font-size($nga-typography, display-1);
+  line-height: mat-line-height($nga-typography, display-1);
+}
+
+.tile__title--sm {
+  font-size: mat-font-size($nga-typography, headline);
+  line-height: mat-line-height($nga-typography, headline);
+}
+
+.tile__title--xs {
+  font-size: mat-font-size($nga-typography, title);
+  line-height: mat-line-height($nga-typography, title);
+}
