@@ -1,4 +1,4 @@
-This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. All code samples use Angular 5. The folder MEAP_v2 has the code samples for the December's book release. The folder MEAP_v3 is for the upcomint one (we split the chapters).
+This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. All code samples use Angular 5. The folder MEAP_v2 has the code samples for the December's book release. The folder MEAP_v3 is for the upcoming one (we split the chapters).
 
 We used Angular CLI 1.6.0 for projects generation. Install it globally to run these samples.
 
