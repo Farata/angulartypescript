@@ -1,0 +1,20 @@
+{
+  "name": "node-servers",
+  "description": "Node and Express samples",
+  "private": true,
+  "scripts": {
+    "devRest": "node build/rest-server.js",
+    "devRestAngular": "node build/rest-server-angular.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "^1.18.2",
+    "ws": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.39",
+    "@types/ws": "3.2.1",
+    "@types/node": "^6.0.57",
+    "typescript": "2.6.2"
+  }
+}
