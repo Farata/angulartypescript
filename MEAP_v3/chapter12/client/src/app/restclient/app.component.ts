@@ -2,7 +2,7 @@ import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import { Observable} from "rxjs/Observable";
 import {Subscription} from "rxjs/Subscription";
-import {Component, OnDestroy, OnInit} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 
 interface IProduct {
   id: number,
@@ -20,7 +20,7 @@ interface IProduct {
   </ul>
   {{error}}  
   `})
-export class AppComponent implements OnInit, OnDestroy{
+export class AppComponent implements OnInit{
 
   products: IProduct[] = [];
   theDataSource: Observable<IProduct[]>;
@@ -40,9 +40,5 @@ export class AppComponent implements OnInit, OnDestroy{
         (err: HttpErrorResponse) =>
         this.error = `Can't get products. Got ${err.message}`
     );
-  }
-
-  ngOnDestroy(){
-    this.productSubscription.unsubscribe();
   }
 }

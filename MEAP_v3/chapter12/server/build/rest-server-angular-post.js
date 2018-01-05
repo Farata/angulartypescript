@@ -8,7 +8,7 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.post("/api/addproduct", (req, res) => {
     console.log(`Received new product ${req.body.title} ${req.body.price}`);
-    res.send({ 'message': 'Server responded: added ' + req.body.title });
+    res.json({ 'message': 'Server responded: added ' + req.body.title });
 });
 const server = app.listen(8000, "localhost", () => {
     const { address, port } = server.address();

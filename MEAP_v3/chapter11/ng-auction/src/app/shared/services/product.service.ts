@@ -28,7 +28,7 @@ export class ProductService {
 
   getById(productId: number): Observable<Product> {
     return this.http.get<Product[]>('/data/products.json').pipe(
-      map(products => <Product>products.find(p => p.id === productId)));
+      map(products => products.find(p => p.id === productId)));
   }
 
   getByCategory(category: string): Observable<Product[]> {

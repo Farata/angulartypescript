@@ -3,5 +3,5 @@ import {Injectable} from "@angular/core";
 @Injectable()
 export abstract class LoggingService {
 
-  log(message: string): void { };
+  abstract log(message: string): void;
 }
