@@ -1,0 +1,15 @@
+<svg width="239" height="256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>NgAuction Logo</title>
+  <defs>
+    <path id="a" d="M0 0h160v160H0z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M119.3 0L.3 42.5l18 157.6 101 56 101-56 18.2-157.3" fill="#212121"/>
+    <g transform="translate(39 32)">
+      <mask id="b" fill="#fff">
+        <use xlink:href="#a"/>
+      </mask>
+      <path d="M6.7 140h80v13.3h-80V140zM35 53.8L53.8 35l94.3 94.2-18.6 19L35 53.7zm47-47l38 37.5-19 19-37.7-37.8L82 6.7zM25.6 63l37.6 38-18.8 18.8L6.6 82l19-18.8z" fill="#FFF" fill-rule="nonzero" mask="url(#b)"/>
+    </g>
+  </g>
+</svg>
