@@ -28,15 +28,21 @@ export class BidServer {
   private onConnection(ws: ws, req: http.IncomingMessage): void {
     // Remember who is associated with current WS connection,
     // so we can send bid updates to specific users.
-    const userId = this.parseUserId(req);
+    const userId = BidServer.parseUserId(req);
     const connections = this.usersToConnections.get(userId) || new Set<ws>();
     this.usersToConnections.set(userId, connections.add(ws));
 
     // Subscribe to WebSocket events.
-    ws.on('message', this.onMessage.bind(this, userId));
-    ws.on('close', this.onClose.bind(this, userId, ws));
-    ws.on('error', this.onError.bind(this, userId, ws));
 
+    ws.on('message', (message: string) => this.onMessage(userId, message));
+    ws.on('close', (userSocket: ws) => this.onClose(userId, userSocket));
+    ws.on('error',
+      (userSocket: ws, error: Error) => this.onError(userId, userSocket, error));
+
+    //ws.on('message', this.onMessage.bind(this, userId));
+    /*ws.on('close', this.onClose.bind(this, userId, ws));
+    ws.on('error', this.onError.bind(this, userId, ws));
+*/
     console.log(`
       Connection opened.
       Open connections count: ${this.wsServer.clients.size} - ${connections.size}
@@ -73,7 +79,7 @@ export class BidServer {
     connections.delete(ws);
   }
 
-  private parseUserId(req: http.IncomingMessage): UserId {
+  private static parseUserId(req: http.IncomingMessage): UserId {
     const url = parseUrl(req.url || '');
     const params = parseQueryString(url.query || '');
     return params.userId as string;
