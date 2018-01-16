@@ -37,7 +37,7 @@ export class BidServer {
     ws.on('message', (message: string) => this.onMessage(userId, message));
     ws.on('close', (userSocket: ws) => this.onClose(userId, userSocket));
     ws.on('error',
-      (userSocket: ws, error: Error) => this.onError(userId, userSocket, error));
+     (userSocket: ws) => this.onError(userId, userSocket));
 
     //ws.on('message', this.onMessage.bind(this, userId));
     /*ws.on('close', this.onClose.bind(this, userId, ws));
@@ -73,8 +73,9 @@ export class BidServer {
     console.log(`Connection closed. Open connections count: ${this.wsServer.clients.size} - ${connections.size}`);
   }
 
-  private onError(userId: UserId, ws: ws, error: Error): void {
-    console.error(`WebSocket error. User ID: ${userId}. Error message: "${error.message}"`);
+  private onError(userId: UserId, ws: ws): void {
+    //console.error(`WebSocket error. User ID: ${userId}. Error message: "${error.message}"`);
+    console.error(`WebSocket error. User ID: ${userId}. Error message: "${ws['message']}"`);
     const connections = this.usersToConnections.get(userId) || new Set<ws>();
     connections.delete(ws);
   }
