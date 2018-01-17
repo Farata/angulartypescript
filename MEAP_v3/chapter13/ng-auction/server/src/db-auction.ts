@@ -42,7 +42,7 @@ export async function getProductsByCategory(category: string): Promise<any[]> {
   return (await db$).filter(p => p.categories.includes(category));
 }
 
-export async function updateProductPrice(productId: number, price: number): Promise<any> {
+export async function updateProductBidAmount(productId: number, price: number): Promise<any> {
   const products = await db$;
   const product = products.find(p => p.id === productId);
   if (product) {

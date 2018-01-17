@@ -2,13 +2,13 @@ import * as http from 'http';
 import * as ws from 'ws';
 import { parse as parseUrl } from 'url';
 import { parse as parseQueryString } from 'querystring';
-import { updateProductPrice } from './db-auction';
+import { updateProductBidAmount} from './db-auction';
 
 type UserId = string;
 
 interface BidMessage {
   productId: number;
-  price: number;
+  amount: number;
 }
 
 export function createBidServer(httpServer: http.Server): BidServer {
@@ -22,7 +22,8 @@ export class BidServer {
 
   constructor(server: http.Server) {
     this.wsServer = new ws.Server({ server });
-    this.wsServer.on('connection', this.onConnection.bind(this));
+    this.wsServer.on('connection',
+       (userSocket: ws, httpRequest: http.IncomingMessage) => this.onConnection(userSocket, httpRequest));
   }
 
   private onConnection(ws: ws, req: http.IncomingMessage): void {
@@ -39,10 +40,6 @@ export class BidServer {
     ws.on('error',
      (userSocket: ws) => this.onError(userId, userSocket));
 
-    //ws.on('message', this.onMessage.bind(this, userId));
-    /*ws.on('close', this.onClose.bind(this, userId, ws));
-    ws.on('error', this.onError.bind(this, userId, ws));
-*/
     console.log(`
       Connection opened.
       Open connections count: ${this.wsServer.clients.size} - ${connections.size}
@@ -51,13 +48,13 @@ export class BidServer {
 
   private onMessage(userId: UserId, message: string): void {
     const bid: BidMessage = JSON.parse(message);
-    const subscribedUsers = this.productsToUsers.get(bid.productId) || new Set<UserId>();
+    const subscribedUsers = this.productsToUsers.get(bid.productId);
     this.productsToUsers.set(bid.productId, subscribedUsers.add(userId));
-    updateProductPrice(bid.productId, bid.price);
+    updateProductBidAmount(bid.productId, bid.amount);
 
-    // Broadcast new price.
+    // Broadcast the new bid amount
     Array.from(subscribedUsers)
-      .map(userId => this.usersToConnections.get(userId) || new Set<ws>())
+      .map(userId => this.usersToConnections.get(userId))
       .reduce((allConnections: ws[], userConnections: Set<ws>) => {
         return allConnections.concat(Array.from(userConnections));
       }, [])
@@ -67,7 +64,7 @@ export class BidServer {
   }
 
   private onClose(userId: UserId, ws: ws): void {
-    const connections = this.usersToConnections.get(userId) || new Set<ws>();
+    const connections = this.usersToConnections.get(userId);
     connections.delete(ws);
 
     console.log(`Connection closed. Open connections count: ${this.wsServer.clients.size} - ${connections.size}`);
@@ -76,7 +73,7 @@ export class BidServer {
   private onError(userId: UserId, ws: ws): void {
     //console.error(`WebSocket error. User ID: ${userId}. Error message: "${error.message}"`);
     console.error(`WebSocket error. User ID: ${userId}. Error message: "${ws['message']}"`);
-    const connections = this.usersToConnections.get(userId) || new Set<ws>();
+    const connections = this.usersToConnections.get(userId);
     connections.delete(ws);
   }
 
