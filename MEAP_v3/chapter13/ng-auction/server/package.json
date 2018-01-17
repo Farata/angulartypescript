@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node build/index.ts"
+    "start": "node build/main.js"
   },
   "dependencies": {
     "cors": "^2.8.4",
