@@ -2,13 +2,13 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
-  OnChanges,
+  OnChanges, OnInit,
   SimpleChange
 } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 import { combineLatest } from 'rxjs/observable/combineLatest';
-import { startWith } from 'rxjs/operators';
+import { startWith} from 'rxjs/operators';
 import { BidMessage, BidService, Product } from '../../shared/services';
 
 @Component({
@@ -17,7 +17,7 @@ import { BidMessage, BidService, Product } from '../../shared/services';
   templateUrl: './product-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProductDetailComponent implements OnChanges {
+export class ProductDetailComponent implements OnInit, OnChanges {
   private readonly productChange$ = new Subject<Product>();
   price$: Observable<number>;
   @Input() product: Product;
@@ -28,7 +28,7 @@ export class ProductDetailComponent implements OnChanges {
     this.price$ = combineLatest(
       this.productChange$.pipe(startWith(this.product)),
       this.bidService.priceUpdates.pipe(startWith<BidMessage|null>(null)),
-      (product, bid) => bid && bid.productId === product.id ? bid.price : product.price
+      (product, bid) =>  bid && bid.productId === product.id ? bid.price : product.price
     );
   }
 
