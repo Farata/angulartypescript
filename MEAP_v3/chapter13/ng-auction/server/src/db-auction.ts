@@ -31,7 +31,7 @@ export async function getDistinctCategories(): Promise<string[]> {
 }
 
 export async function getProducts(params: ProductSearchParams = {}): Promise<Product[]> {
-  return = filterProducts(await db$, params);
+  return filterProducts(await db$, params);
 }
 
 export async function getProductById(productId: number): Promise<any> {
