@@ -1,29 +1,29 @@
 import * as cors from 'cors';
 import * as express from 'express';
 import {
-  getAllCategories,
+  getDistinctCategories,
   getProducts,
   getProductById,
   getProductsByCategory
 } from './db-auction';
 
-export const api = express.Router();
+export const router = express.Router();
 
-api.use(cors());
+router.use(cors());
 
-api.get('/products', async (req: express.Request, res: express.Response) => {
+router.get('/products', async (req: express.Request, res: express.Response) => {
   res.json(await getProducts(req.query));
 });
 
-api.get('/products/:productId', async (req: express.Request, res: express.Response) => {
+router.get('/products/:productId', async (req: express.Request, res: express.Response) => {
   const productId = parseInt(req.params.productId, 10) || -1;
   res.json(await getProductById(productId));
 });
 
-api.get('/categories', async (_, res: express.Response) => {
-  res.json(await getAllCategories());
+router.get('/categories', async (_, res: express.Response) => {
+  res.json(await getDistinctCategories());
 });
 
-api.get('/categories/:category', async (req: express.Request, res: express.Response) => {
+router.get('/categories/:category', async (req: express.Request, res: express.Response) => {
   res.json(await getProductsByCategory(req.params.category));
 });

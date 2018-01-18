@@ -3,8 +3,8 @@ import {ProductService} from './product.service';
 
 export function productServiceFactory (isProd: boolean) {
   if (isProd){
-    return new MockProductService();   // Samsung7
+    return new ProductService();   // iPhone7
   }else{
-    return new ProductService();    // iPhone7
+    return new MockProductService();     // Samsung7
   }
 }

@@ -1,10 +1,10 @@
 import * as express from 'express';
 import { createServer } from 'http';
 import { createBidServer } from './ws-auction';
-import { api } from './rest-auction';
+import { router } from './rest-auction';
 
 const app = express();
-app.use('/api', api);
+app.use('/api', router);
 
 const server = createServer(app);
 createBidServer(server);
