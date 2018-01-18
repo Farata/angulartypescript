@@ -31,11 +31,11 @@ export async function getDistinctCategories(): Promise<string[]> {
 }
 
 export async function getProducts(params: ProductSearchParams = {}): Promise<Product[]> {
-  return filterProducts(await db$, params);
+  return = filterProducts(await db$, params);
 }
 
 export async function getProductById(productId: number): Promise<any> {
-  return (await db$).find(p => p.id === productId);
+   return (await db$).find(p => p.id === productId);
 }
 
 export async function getProductsByCategory(category: string): Promise<any[]> {
