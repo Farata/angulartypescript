@@ -29,7 +29,6 @@ export class BidServer {
   }
 
   private onMessage(message: string): void {
-    console.log("+++++++" + message);
     const bid: BidMessage = JSON.parse(message);
     updateProductBidAmount(bid.productId, bid.price);
 

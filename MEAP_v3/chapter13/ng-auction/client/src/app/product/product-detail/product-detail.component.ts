@@ -19,15 +19,15 @@ import { BidMessage, BidService, Product } from '../../shared/services';
 })
 export class ProductDetailComponent implements OnInit, OnChanges {
   private readonly productChange$ = new Subject<Product>();
-  price$: Observable<number>;
+  latestBids$: Observable<number>;
   @Input() product: Product;
 
   constructor(private bidService: BidService) {}
 
   ngOnInit() {
-    this.price$ = combineLatest(
+    this.latestBids$ = combineLatest(
       this.productChange$.pipe(startWith(this.product)),
-      this.bidService.priceUpdates.pipe(startWith<BidMessage|null>(null)),
+      this.bidService.priceUpdates$.pipe(startWith<BidMessage|null>(null)),
       (product, bid) =>  bid && bid.productId === product.id ? bid.price : product.price
     );
   }

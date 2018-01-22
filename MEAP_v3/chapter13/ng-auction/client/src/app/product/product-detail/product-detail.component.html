@@ -12,7 +12,7 @@
          [attr.src]="product.imageUrl">
   </div>
 
-  <div fxFlex="50%" *ngIf="price$ | async as price">
+  <div fxFlex="50%" *ngIf="latestBids$ | async as price">
     <div class="info">
       <h1 class="info__title">{{ product?.title }}</h1>
       <div class="info__description">{{ product?.description }}</div>

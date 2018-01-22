@@ -21,7 +21,7 @@ export class ProductComponent {
     this.product$ = this.route.paramMap
       .pipe(
         map(params => parseInt(params.get('productId') || '', 10)),
-        filter(productId => !!productId),
+        filter(productId => Boolean(productId)),
         switchMap(productId => this.productService.getById(productId))
       );
 
