@@ -2,7 +2,7 @@ import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import {Component} from "@angular/core";
 
-interface IProduct {
+interface Product {
   id: string;
   title: string;
   price: number;
@@ -19,7 +19,7 @@ interface IProduct {
   `})
 export class AppComponent{
 
-  products$: Observable<IProduct[]>;
+  products$: Observable<Product[]>;
 
   constructor(private httpClient: HttpClient) {
     //this.products$ = this.httpClient.get<IProduct[]>('/data/products.json');
@@ -31,7 +31,7 @@ export class AppComponent{
     let httpParams = new HttpParams()
       .set('title', "First");
 
-    this.products$ = this.httpClient.get<IProduct[]>('/data/products.json',
+    this.products$ = this.httpClient.get<Product[]>('/data/products.json',
       {
       headers: httpHeaders,
       params: httpParams
