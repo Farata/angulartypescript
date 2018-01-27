@@ -29,9 +29,6 @@ describe('ProductService', () => {
     // Emit the data to the subscriber
     let productsRequest = httpMock.expectOne('/data/products.json');
     productsRequest.flush(productData);
-
-    // Assert that there are no outstanding requests
-    httpMock.verify();
   }));
 
   it('should return error if request for products failed', async( () => {
@@ -44,7 +41,7 @@ describe('ProductService', () => {
     let productsRequest = httpMock.expectOne('/data/products.json');
 
     productsRequest.error(new ErrorEvent (errorType) );
-
-    httpMock.verify();
   }));
+
+  afterEach(() => httpMock.verify());
 });
