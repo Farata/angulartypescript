@@ -1,4 +1,3 @@
-import {ProductService} from "./product.service";
 import {Product} from "./product";
 
 export class MockProductService {

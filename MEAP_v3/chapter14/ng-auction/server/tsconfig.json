@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "build",
+    "target": "es2017",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

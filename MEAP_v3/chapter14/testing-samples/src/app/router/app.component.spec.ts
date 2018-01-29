@@ -32,7 +32,7 @@ describe('AppComponent', () => {
   }));
 
   it('can navigate and pass params to the product detail view', fakeAsync(() => {
-    const productLink = fixture.debugElement.query(By.css('.product'));
+    const productLink = fixture.debugElement.query(By.css('#product'));
     productLink.triggerEventHandler('click', { button: 0 });
     tick();
     fixture.detectChanges();
