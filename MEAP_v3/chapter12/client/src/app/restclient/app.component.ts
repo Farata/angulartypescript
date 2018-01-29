@@ -4,7 +4,7 @@ import { Observable} from "rxjs/Observable";
 import {Subscription} from "rxjs/Subscription";
 import {Component, OnInit} from "@angular/core";
 
-interface IProduct {
+interface Product {
   id: number,
   title: string,
   price: number
@@ -22,13 +22,13 @@ interface IProduct {
   `})
 export class AppComponent implements OnInit{
 
-  products: IProduct[] = [];
-  theDataSource: Observable<IProduct[]>;
+  products: Product[] = [];
+  theDataSource: Observable<Product[]>;
   productSubscription: Subscription;
   error: string;
 
   constructor(private httpClient: HttpClient) {
-    this.theDataSource = this.httpClient.get<IProduct[]>('http://localhost:8000/api/products');
+    this.theDataSource = this.httpClient.get<Product[]>('/api/products');
   }
 
   ngOnInit(){
