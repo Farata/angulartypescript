@@ -1,6 +1,6 @@
-This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. All code samples use Angular 5. The folder MEAP_v2 has the code samples for the December's book release. The folder MEAP_v3 is for the upcoming one (we split the chapters).
+This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. All code samples use Angular 5. The folder MEAP_v2 has the code samples for the December's book release. The folder MEAP_v4 is for the upcoming one (we split the chapters).
 
-We used Angular CLI 1.6.0 for projects generation. Install it globally to run these samples.
+We used Angular CLI 1.6.0 (or newer) for projects generation. Install the latest version globally to run these samples.
 
 In chapter 2, code samples are separate projects and you need to switch to the project directory you'd like to run (e.g. pipes), run npm install and then ng serve. The same applies to the sample app ngAuction that exists in most of the chapters.
 
