@@ -10,10 +10,10 @@ const routes: Routes = [
     resolve:{
       mydata: DataResolver
     },
-    runGuardsAndResolvers:'always'
+    runGuardsAndResolvers:'always'  // requires Angular 5.1 or later
   }
 ];
 
 export const routing = RouterModule.forRoot(routes,
-  {onSameUrlNavigation: "reload"}
+  {onSameUrlNavigation: "reload"}   // requires Angular 5.1 or later
   );
