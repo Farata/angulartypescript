@@ -1,1 +1,0 @@
-This folder contains text fragments that were written, but didn't make into the final version of the book.

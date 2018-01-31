@@ -1,4 +1,4 @@
-This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. All code samples use Angular 5. The folder MEAP_v2 has the code samples for the December's book release. The folder MEAP_v4 is for the upcoming one (we split the chapters).
+This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). It's work in progress. All code samples use Angular 5. In the MEAP v4 of the book, we split some chapters to make them shorter. If you have an older version of the MEAP, get a new one so the chapters in the book correspond to the code samples.
 
 We used Angular CLI 1.6.0 (or newer) for projects generation. Install the latest version globally to run these samples.
 
@@ -8,7 +8,7 @@ In other chapters, multiple code sample apps are included in the same project, e
 
 You can read more about configuring multiple apps in the same project here: https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project
 
-Starting from chapter 5 (MEAP_v2) or chapter 7 (MEAP_v3) we build an ngAuction app that uses Angular Material and Flex Layout libraries.
+In chapters 2-4 we build the ngAuction app that uses Bootstrap 3, and starting from chapter 7 we re-write ngAuction to use Angular Material and Flex Layout libraries (no more Bootstrap).
 
 Consider watching the video Angular Applied from http://bit.ly/2iiKjDV, where Yakov Fain shows how to build apps from scratch using Angular CLI: 
 
