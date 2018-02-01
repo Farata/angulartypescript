@@ -1,14 +1,13 @@
 import { Routes, RouterModule } from '@angular/router';
 import {DataResolver} from "./data.resolver";
 import {DataComponent} from "./data.component";
-import {HomeResComponent} from "./home.component";
-
+import {HomeComponent} from "./home.component";
 
 const routes: Routes = [
-  {path: '',        component: HomeResComponent},
+  {path: '',        component: HomeComponent},
   {path: 'mydata', component: DataComponent,
     resolve:{
-      mydata: DataResolver
+      loadedJsonData: DataResolver
     },
     runGuardsAndResolvers:'always'  // requires Angular 5.1 or later
   }

@@ -15,11 +15,11 @@ export class DataService{
       console.log("In DataService.loadData()");
 
         if (this.mydata){
-            return Observable.from(this.mydata);  // return from cache
+            return Observable.from(this.mydata);  // return the cached data
         } else
         {
-            return this.http.get<string[]>("./assets/45MB_DATA.json")
-                .do(data => this.mydata = data);
+            return this.http.get<string[]>("./assets/48MB_DATA.json")
+                .do(data => this.mydata = data); // store the data in the var mydata
         }
     }
 }
