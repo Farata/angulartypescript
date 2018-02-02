@@ -7,10 +7,11 @@ describe('Login page', () => {
   let homePage: HomePage;
 
   beforeEach(() => {
+    browser.waitForAngularEnabled(false);
     loginPage = new LoginPage();
   });
 
-  it('should login and navigate to home loginPage', () => {
+  it('should navigate to login page and log in', () => {
     loginPage.navigateToLogin();
     loginPage.login('Joe', 'password');
 
@@ -21,7 +22,7 @@ describe('Login page', () => {
     expect(homePage.getHeaderText()).toEqual('Home Component');
   });
 
-  it('should stay on login loginPage if wrong credential entered', () => {
+  it('should stay on login page if wrong credentials entered', () => {
     loginPage.navigateToLogin();
     loginPage.login('Joe', 'wrongpassword');
 
