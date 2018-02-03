@@ -18,7 +18,7 @@ export class SearchPage {
 
     const EC = protractor.ExpectedConditions;
     const urlChanged = EC.urlContains('/search');
-    browser.wait(urlChanged, 1, 'The URL should contain "/search"');
+    browser.wait(urlChanged, 2000, 'The URL should contain "/search"');
 
   }
 
