@@ -8,8 +8,8 @@ describe('ngAuction search', () => {
     searchPage = new SearchPage();
   });
 
-  it('should navigate to landing page and open the search panel',  () => {
-    searchPage.navigateToLanding();
+  it('should perform the search for products that cost from $10 to $100',  () => {
+    searchPage.navigateToLandingPage();
     let url =  browser.getCurrentUrl();
     expect(url).toContain('/categories/all');
 
