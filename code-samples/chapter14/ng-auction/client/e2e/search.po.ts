@@ -1,4 +1,4 @@
-import { browser, by, element } from 'protractor';
+import { protractor, browser, by, element, $, $$ } from 'protractor';
 
 export class SearchPage {
 
@@ -6,14 +6,20 @@ export class SearchPage {
      const searchOnToolbar = element(by.id('search'));
      searchOnToolbar.click();
 
-     const minPrice = element(by.css('input[formControlName="minPrice"]'));
-     const maxPrice = element(by.css('input[formControlName="maxPrice"]'));
+     const minPrice = $('input[formControlName="minPrice"]');
+     const maxPrice = $('input[formControlName="maxPrice"]');
      minPrice.sendKeys(minimalPrice);
      maxPrice.sendKeys(maximumPrice);
 
      const searchOnForm = element(by.buttonText('SEARCH'));
      searchOnForm.click();
-     this.waitForUrlTocontain('/search');
+     // this.waitForUrlTocontain('/search', 2000,
+     //               'The URL should contain "/search"');
+
+    const EC = protractor.ExpectedConditions;
+    const urlChanged = EC.urlContains('/search');
+    browser.wait(urlChanged, 1, 'The URL should contain "/search"');
+
   }
 
    navigateToLanding() {
@@ -21,19 +27,20 @@ export class SearchPage {
   }
 
   getFirstProductPrice() {
-    return element.all(by.css('span[class="tile__price-tag"]'))
+    return $$('span[class="tile__price-tag"]')
       .first().getText()
       .then((value) => {return parseInt(value.replace('$', ''), 10); } );
   }
 
-  waitForUrlTocontain (urlSegment: string, timeout: number = 2000) {
+/*  waitForUrlTocontain (urlSegment: string, timeout: number,
+                       timeoutMessage: string) {
     return browser.wait(() => {
       return browser.getCurrentUrl().then((url) => {
         const regex = new RegExp(urlSegment);
         return regex.test(url);
       });
-    }, timeout);
-  }
+    }, timeout, timeoutMessage);
+  }*/
 
 /*  getFirstProductPrice() {
     const firstProductPrice = element.all(by.css('span[class="tile__price-tag"]'))
