@@ -13,6 +13,7 @@ export class SearchPage {
 
      const searchOnForm = element(by.buttonText('SEARCH'));
      searchOnForm.click();
+     browser.waitForAngular();
   }
 
    navigateToLanding() {
