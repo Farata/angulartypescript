@@ -13,7 +13,7 @@ export class SearchPage {
 
      const searchOnForm = element(by.buttonText('SEARCH'));
      searchOnForm.click();
-     browser.waitForAngular(); // wait till Angular completes the HTTP request for products
+     this.waitForUrlTocontain('/search');
   }
 
    navigateToLanding() {
@@ -26,12 +26,26 @@ export class SearchPage {
       .then((value) => {return parseInt(value.replace('$', ''), 10); } );
   }
 
+  waitForUrlTocontain (urlSegment: string, timeout: number = 2000) {
+    return browser.wait(() => {
+      return browser.getCurrentUrl().then((url) => {
+        const regex = new RegExp(urlSegment);
+        return regex.test(url);
+      });
+    }, timeout);
+  }
+
 /*  getFirstProductPrice() {
     const firstProductPrice = element.all(by.css('span[class="tile__price-tag"]'))
                               .first().getText();
     return firstProductPrice;
   }*/
 }
+
+
+
+
+
 
 
 /*
