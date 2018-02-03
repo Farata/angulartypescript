@@ -13,7 +13,7 @@ export class SearchPage {
 
      const searchOnForm = element(by.buttonText('SEARCH'));
      searchOnForm.click();
-     browser.waitForAngular();
+     browser.waitForAngular(); // wait till Angular completes the HTTP request for products
   }
 
    navigateToLanding() {
