@@ -13,12 +13,12 @@ export class SearchPage {
 
      const searchOnForm = element(by.buttonText('SEARCH'));
      searchOnForm.click();
-     // this.waitForUrlTocontain('/search', 2000,
+     // this.waitForUrlTocontain('/search', 5000,
      //               'The URL should contain "/search"');
 
     const EC = protractor.ExpectedConditions;
     const urlChanged = EC.urlContains('/search');
-    browser.wait(urlChanged, 2000, 'The URL should contain /search');
+    browser.wait(urlChanged, 5000, 'The URL should contain /search');
 
   }
 
@@ -32,7 +32,10 @@ export class SearchPage {
       .then((value) => {return parseInt(value.replace('$', ''), 10); } );
   }
 
-/*  waitForUrlTocontain (urlSegment: string, timeout: number,
+
+//Just another way to implement the wait
+
+waitForUrlTocontain (urlSegment: string, timeout: number,
                        timeoutMessage: string) {
     return browser.wait(() => {
       return browser.getCurrentUrl().then((url) => {
@@ -40,13 +43,8 @@ export class SearchPage {
         return regex.test(url);
       });
     }, timeout, timeoutMessage);
-  }*/
+  }
 
-/*  getFirstProductPrice() {
-    const firstProductPrice = element.all(by.css('span[class="tile__price-tag"]'))
-                              .first().getText();
-    return firstProductPrice;
-  }*/
 }
 
 
