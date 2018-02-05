@@ -28,8 +28,8 @@ export class AppComponent implements OnDestroy{
 
   sendMessageToServer(){
     console.log("Sending message to WebSocket server");
-    this.wsSubscription.unsubscribe();  // Close the Websocket
     this.wsService.sendMessage("Hello from client");
+    this.wsSubscription.unsubscribe();  // Close the Websocket
   }
 
   ngOnDestroy(){
