@@ -21,6 +21,5 @@ describe('CarouselComponent', () => {
 
   it('should be created', () => {
     expect(component).toBeTruthy();
-    expect(fixture).toMatchSnapshot
   });
 });
