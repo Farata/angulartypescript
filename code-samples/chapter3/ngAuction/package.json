@@ -49,9 +49,5 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  },
-  "peerDependencies": {
-    "font-awesome": "^4.7.0",
-    "material-icons": "^0.1.0"
   }
 }
