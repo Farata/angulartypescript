@@ -1,6 +1,6 @@
-import 'rxjs/add/operator/map';
 import {Component, OnDestroy} from "@angular/core";
 import {WebSocketService} from "./websocket.service";
+import {Subscription} from "rxjs/Subscription";
 
 @Component({
   selector: 'app-root',
@@ -12,10 +12,11 @@ import {WebSocketService} from "./websocket.service";
 export class AppComponent implements OnDestroy{
 
   messageFromServer: string;
+  wsSubscription: Subscription;
 
   constructor(private wsService: WebSocketService) {
 
-    this.wsService.createObservableSocket("ws://localhost:8085")
+    this.wsSubscription = this.wsService.createObservableSocket("ws://localhost:8085")
       .subscribe(
         data => {
           this.messageFromServer = data;
@@ -27,11 +28,12 @@ export class AppComponent implements OnDestroy{
 
   sendMessageToServer(){
     console.log("Sending message to WebSocket server");
-
+    this.wsSubscription.unsubscribe();  // Close the Websocket
     this.wsService.sendMessage("Hello from client");
   }
 
   ngOnDestroy(){
-    this.wsService.closeWebSocket();
+    // this.wsService.closeWebSocket();
+    this.wsSubscription.unsubscribe();  // Close the Websocket
   }
 }

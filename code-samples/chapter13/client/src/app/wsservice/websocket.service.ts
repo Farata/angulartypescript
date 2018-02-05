@@ -4,8 +4,8 @@ export class WebSocketService{
 
   ws: WebSocket;
 
-  createObservableSocket(url:string):Observable<any>{
 
+  createObservableSocket(url:string):Observable<any>{
     this.ws = new WebSocket(url);
 
     return new Observable(
@@ -18,6 +18,8 @@ export class WebSocketService{
 
         this.ws.onclose = (event) => observer.complete();
 
+        return () =>
+          this.ws.close();
       }
     );
   }
@@ -27,7 +29,7 @@ export class WebSocketService{
   }
 
   closeWebSocket(){
-    this.ws.close(123, "The client is closing the connection");
+    this.ws.close(1000, "The client is closing the connection");
   }
 
 }
