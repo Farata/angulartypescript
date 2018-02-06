@@ -8,7 +8,7 @@ In other chapters, multiple code sample apps are included in the same project, e
 
 You can read more about configuring multiple apps in the same project here: https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project
 
-In chapters 2-4 we build the ngAuction app that uses Bootstrap 3, and starting from chapter 7 we re-write ngAuction to use Angular Material and Flex Layout libraries (no more Bootstrap).
+In chapters 2, 3, and 5 we build the ngAuction app that uses Bootstrap 4, and starting from chapter 7 we re-write ngAuction to use Angular Material and Flex Layout libraries (no more Bootstrap).
 
 Consider watching the video Angular Applied from http://bit.ly/2iiKjDV, where Yakov Fain shows how to build apps from scratch using Angular CLI: 
 
