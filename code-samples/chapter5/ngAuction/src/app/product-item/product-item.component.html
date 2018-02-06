@@ -4,6 +4,9 @@
   <mat-card-content>
     {{ product.description }}
   </mat-card-content>
+  <div class="ratings">
+    <nga-stars [rating]="product.rating"></nga-stars>
+  </div>
   <mat-card-actions>
     <a mat-button color="accent" [routerLink]="['/products', product.id]">VIEW</a>
   </mat-card-actions>

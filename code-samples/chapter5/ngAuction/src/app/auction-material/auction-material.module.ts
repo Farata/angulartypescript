@@ -24,7 +24,5 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatCardModule,
     BrowserAnimationsModule
   ]
-//  providers: [ { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }]
-
 })
 export class AuctionMaterialModule { }
