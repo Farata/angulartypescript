@@ -1,4 +1,4 @@
-import {Component, OnDestroy} from "@angular/core";
+import {Component} from "@angular/core";
 import {WebSocketService} from "./websocket.service";
 import {Subscription} from "rxjs/Subscription";
 
@@ -8,8 +8,9 @@ import {Subscription} from "rxjs/Subscription";
   template: `<h1>Angular client for a WebSocket server</h1>
   {{messageFromServer}}<br>
   <button (click)="sendMessageToServer()">Send Message to Server</button>
+  <button (click)="closeSocket()">Disconnect</button>  
   `})
-export class AppComponent implements OnDestroy{
+export class AppComponent{
 
   messageFromServer: string;
   wsSubscription: Subscription;
@@ -27,13 +28,11 @@ export class AppComponent implements OnDestroy{
   }
 
   sendMessageToServer(){
-    console.log("Sending message to WebSocket server");
-    this.wsService.sendMessage("Hello from client");
-    this.wsSubscription.unsubscribe();  // Close the Websocket
+    const status = this.wsService.sendMessage("Hello from client");
+    console.log(status);
   }
 
-  ngOnDestroy(){
-    // this.wsService.closeWebSocket();
+  closeSocket(){
     this.wsSubscription.unsubscribe();  // Close the Websocket
   }
 }

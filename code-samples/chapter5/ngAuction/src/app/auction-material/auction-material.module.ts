@@ -11,7 +11,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material'; // not needed starting from AM 5.0
 
 @NgModule({
   imports: [
