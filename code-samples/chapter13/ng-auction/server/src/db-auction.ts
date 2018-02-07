@@ -22,12 +22,12 @@ const readFile = util.promisify(fs.readFile);
 const db$: Promise<DB> = readFile('./data/products.json', 'utf8')
   .then(JSON.parse, console.error);
 
-export async function getDistinctCategories(): Promise<string[]> {
-  const distinctCategories = (await db$)
+export async function getAllCategories(): Promise<string[]> {
+  const allCategories = (await db$)
     .map(p => p.categories)
     .reduce((all, current) => all.concat(current), []);
 
-  return [...new Set(distinctCategories)];
+  return [...new Set(allCategories)];
 }
 
 export async function getProducts(params: ProductSearchParams = {}): Promise<Product[]> {

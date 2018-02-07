@@ -1,7 +1,7 @@
 import * as cors from 'cors';
 import * as express from 'express';
 import {
-  getDistinctCategories,
+  getAllCategories,
   getProducts,
   getProductById,
   getProductsByCategory
@@ -21,7 +21,7 @@ router.get('/products/:productId', async (req: express.Request, res: express.Res
 });
 
 router.get('/categories', async (_, res: express.Response) => {
-  res.json(await getDistinctCategories());
+  res.json(await getAllCategories());
 });
 
 router.get('/categories/:category', async (req: express.Request, res: express.Response) => {
