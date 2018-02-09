@@ -1,6 +1,6 @@
 import {Counter} from './counter';
 
-xdescribe("Counter", ()=>{
+describe("Counter", ()=>{
 
   let cnt: Counter;
 

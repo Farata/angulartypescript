@@ -8,7 +8,7 @@ import {ProductDetailComponent} from './product.detail.component';
 import {routes} from './app.routing';
 import {HomeComponent} from './home.component';
 
-describe('AppComponent', () => {
+describe('Router app AppComponent', () => {
   let fixture;
   let router: Router;
   let location: Location;

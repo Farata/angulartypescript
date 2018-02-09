@@ -23,14 +23,14 @@ export class AppComponent {
 
     this.response='';
 
-    this.httpClient.post<string>("/api/addproduct",
+    this.httpClient.post<string>("/api/product",
                                  formValue)
       .subscribe(
         data =>  this.response = data['message'],
         (err: HttpErrorResponse) =>
             this.response = "Can't add product. Error code:" +
               err.message + " " +
-              err.error.error.message
+              err.error.message
       );
   }
 }

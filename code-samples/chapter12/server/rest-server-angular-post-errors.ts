@@ -7,7 +7,7 @@ const app = express();
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 
-app.post("/api/addproduct", (req, res) => {
+app.post("/api/product", (req, res) => {
 
     console.log(`Received new product ${req.body.title} ${req.body.price}`);
 

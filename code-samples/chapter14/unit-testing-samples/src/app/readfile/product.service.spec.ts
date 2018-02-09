@@ -3,7 +3,7 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { ProductService } from './product.service';
 import {Product} from './product';
 
-describe('ProductService', () => {
+describe('Readfile app ProductService', () => {
   let productService: ProductService;
   let httpMock: HttpTestingController;
 
