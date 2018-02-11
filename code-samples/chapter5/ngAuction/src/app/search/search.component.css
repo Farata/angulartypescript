@@ -1,4 +1,4 @@
-mat-input-container, mat-select, [mat-raised-button] {
+mat-form-field, mat-select, [mat-raised-button] {
   display: block;
   margin-top: 16px;
   width: 100%;
