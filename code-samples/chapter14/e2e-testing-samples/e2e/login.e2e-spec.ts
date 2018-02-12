@@ -7,7 +7,6 @@ describe('Login page', () => {
   let homePage: HomePage;
 
   beforeEach(() => {
-    browser.waitForAngularEnabled(false);
     loginPage = new LoginPage();
   });
 
