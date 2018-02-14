@@ -9,6 +9,6 @@ export class Product {
 
 export class ProductService {
   getProduct(): Product {
-    return new Product( 0, "iPhone 7", 349.99, "The latest iPhone, 7-inch screen");
+    return new Product( 0, "iPhone 7", 249.99, "The latest iPhone, 7-inch screen");
   }
 }

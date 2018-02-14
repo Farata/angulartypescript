@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'product',
@@ -11,10 +11,12 @@ export class ProductDetailComponent {
 
   constructor(route: ActivatedRoute) {
 
-     this.productCategory = route.snapshot.queryParamMap.get('category');
+    this.productCategory = route.snapshot.queryParamMap.get('category');
 
-    /* route.queryParamMap
-      .subscribe(params => this.productCategory = params.get('category'));*/
+    //An alternative way of receiving params dynamically via subscription
+    /*
+    route.queryParamMap
+      .subscribe(params => this.productCategory = params.get('category'));
+    */
   }
-
 }
