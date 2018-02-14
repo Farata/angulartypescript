@@ -4,7 +4,7 @@
   padding-right: 10px;
 }
 
-md-card-title {
+mat-card-title {
   overflow-y: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
