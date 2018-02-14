@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import {ProductService} from "./product.service";
 
 @NgModule({
   declarations: [
@@ -13,7 +12,6 @@ import {ProductService} from "./product.service";
     BrowserModule,
     ReactiveFormsModule
   ],
-  providers:[ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

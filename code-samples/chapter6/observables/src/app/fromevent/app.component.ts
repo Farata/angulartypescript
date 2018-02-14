@@ -1,10 +1,7 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import {Observable} from "rxjs/Observable";
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Observable } from "rxjs/Observable";
 import 'rxjs/add/observable/fromEvent';
-/* import 'rxjs/add/operator/debounceTime';  // prior to RxJS 5.5
-import 'rxjs/add/operator/map';              // prior to RxJS 5.5
-*/
-import {debounceTime, map} from 'rxjs/operators';
+import { debounceTime, map } from 'rxjs/operators';
 
 @Component({
   selector: "app-root",
@@ -13,7 +10,7 @@ import {debounceTime, map} from 'rxjs/operators';
     <input type="text" #stockSymbol placeholder="Enter stock" >
   `
 })
-export class AppComponent implements AfterViewInit{
+export class AppComponent implements AfterViewInit {
 
   @ViewChild('stockSymbol')
   myInputField: ElementRef;
@@ -29,9 +26,9 @@ export class AppComponent implements AfterViewInit{
       .subscribe(stock => this.getStockQuoteFromServer(stock));
   }
 
-    getStockQuoteFromServer(stock: string) {
+  getStockQuoteFromServer(stock: string) {
 
-    console.log(`The price of ${stock} is ${(100*Math.random()).toFixed(4)}`);
+    console.log(`The price of ${stock} is ${(100 * Math.random()).toFixed(4)}`);
   }
 }
 
