@@ -14,7 +14,7 @@ export class EbayComponent {
 
   searchFor: Observable<string>;
 
-  constructor(private state: StateService){
+  constructor(private state: StateService) {
 
       this.searchFor = state.getState();
   }
