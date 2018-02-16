@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IStock} from './istock';
+import {Stock} from './istock';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,9 @@ import {IStock} from './istock';
   `
 })
 export class AppComponent {
-  receivedStock: IStock;
+  receivedStock: Stock;
 
-  priceQuoteHandler(event:IStock) {
+  priceQuoteHandler(event:Stock) {
     this.receivedStock = event;
   }
 }

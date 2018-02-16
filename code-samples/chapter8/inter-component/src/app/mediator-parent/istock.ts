@@ -1,4 +1,4 @@
-export interface IStock {
+export interface Stock {
   stockSymbol: string;
   bidPrice: number;
 }
