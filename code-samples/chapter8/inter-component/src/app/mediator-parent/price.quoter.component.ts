@@ -7,7 +7,7 @@ import 'rxjs/add/observable/interval';
   selector: 'price-quoter',
   template: `<strong>
                <button (click)="buyStocks()">Buy</button>
-               {{stockSymbol}} {{lastPrice | currency: "USD": true}}
+               {{stockSymbol}} {{lastPrice | currency: "USD": 'symbol'}}
              </strong>
             `,
   styles:[`:host {background: pink; padding: 5px 15px 15px 15px;}`]

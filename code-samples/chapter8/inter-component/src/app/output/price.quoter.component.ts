@@ -6,8 +6,8 @@ import 'rxjs/add/observable/interval';
 @Component({
   selector: 'price-quoter',
   template: `<strong>Inside PriceQuoterComponent:
-               {{priceQuote?.stockSymbol}} 
-               {{priceQuote?.lastPrice | currency:'USD':true}}</strong>`,
+               {{priceQuote?.stockSymbol}}
+               {{priceQuote?.lastPrice | currency:'USD':'symbol'}}</strong>`,
   styles:[`:host {background: pink;}`]
 })
 export class PriceQuoterComponent {

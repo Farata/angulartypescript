@@ -5,10 +5,12 @@ import {AfterViewInit, Component, QueryList, ViewChild, ViewChildren} from "@ang
   template: `
     <h1>Parent</h1>
     <child name= "John" #child1></child>
-    
+
     <child name= "Mary" #child2></child>
-    
-    <button (click)="greetAllChildren()">Invoke greet() on both chlidren</button>
+
+    <button (click) = "child2.greet()">Invoke greet() on child 2</button>
+
+    <button (click)="greetAllChildren()">Invoke greet() on both children</button>
   `
 })
 export class AppComponent implements AfterViewInit {
