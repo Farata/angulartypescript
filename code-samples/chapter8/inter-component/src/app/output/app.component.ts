@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IPriceQuote} from "./iprice.quote";
+import {PriceQuote} from "./iprice.quote";
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,9 @@ import {IPriceQuote} from "./iprice.quote";
     `
 })
 export class AppComponent {
-  priceQuote : IPriceQuote;
+  priceQuote : PriceQuote;
 
-  priceQuoteHandler(event:IPriceQuote) {
+  priceQuoteHandler(event:PriceQuote) {
     this.priceQuote = event;
   }
 }

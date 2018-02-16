@@ -1,5 +1,5 @@
 import {Component, Output, EventEmitter}  from '@angular/core';
-import {IPriceQuote} from "./iprice.quote";
+import {PriceQuote} from "./iprice.quote";
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/interval';
 
@@ -11,9 +11,9 @@ import 'rxjs/add/observable/interval';
   styles:[`:host {background: pink;}`]
 })
 export class PriceQuoterComponent {
-  @Output() lastPrice = new EventEmitter<IPriceQuote>();
+  @Output() lastPrice = new EventEmitter<PriceQuote>();
 
-  priceQuote : IPriceQuote;
+  priceQuote: PriceQuote;
 
   constructor() {
     Observable.interval(2000)

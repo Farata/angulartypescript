@@ -8,7 +8,7 @@ import {IStock} from './istock';
 })
 export class OrderComponent {
 
-  message = "Waiting for orders...";
+  message = 'Waiting for orders...';
 
   @Input() set stock(value: IStock ){
     if (value && value.bidPrice != undefined) {
