@@ -1,5 +1,5 @@
 import {Component, Output, EventEmitter} from '@angular/core';
-import {IStock} from './istock';
+import {Stock} from './istock';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/interval';
 
@@ -13,7 +13,7 @@ import 'rxjs/add/observable/interval';
   styles:[`:host {background: pink; padding: 5px 15px 15px 15px;}`]
 })
 export class PriceQuoterComponent {
-  @Output() buy: EventEmitter <IStock> = new EventEmitter();
+  @Output() buy: EventEmitter <Stock> = new EventEmitter();
 
   stockSymbol = "IBM";
   lastPrice: number;
@@ -31,7 +31,7 @@ export class PriceQuoterComponent {
 
   buyStocks(): void{
 
-    let stockToBuy: IStock = {
+    let stockToBuy: Stock = {
       stockSymbol: this.stockSymbol,
       bidPrice: this.lastPrice
     };
