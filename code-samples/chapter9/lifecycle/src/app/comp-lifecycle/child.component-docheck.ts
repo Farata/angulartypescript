@@ -5,7 +5,7 @@ import {
 
 @Component({
   selector: 'child',
-  styles: ['.child{background:lightgreen}'],
+  styles: ['.child{background: lightgreen}'],
   template: `
     <div class="child">
       <h2>Child</h2>

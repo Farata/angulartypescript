@@ -4,7 +4,7 @@ import {FormGroup, FormControl} from "@angular/forms";
 @Component({
   selector: 'app-root',
   template: `
-    <form [formGroup]="formModel" (ngSubmit)="onSubmit()">
+    <form [formGroup]="myFormModel" (ngSubmit)="onSubmit()">
       <div>Username: <input type="text" formControlName="username"></div>
       <div>SSN:      <input type="text" formControlName="ssn"></div>
 
@@ -17,10 +17,10 @@ import {FormGroup, FormControl} from "@angular/forms";
   `
 })
 export class AppComponent {
-  formModel: FormGroup;
+  myFormModel: FormGroup;
 
   constructor() {
-    this.formModel = new FormGroup({
+    this.myFormModel = new FormGroup({
       username: new FormControl(''),
       ssn: new FormControl(''),
       passwordsGroup: new FormGroup({
@@ -31,6 +31,6 @@ export class AppComponent {
   }
 
   onSubmit() {
-    console.log(this.formModel.value);
+    console.log(this.myFormModel.value);
   }
 }

@@ -25,12 +25,13 @@ export class HomeComponent {
   constructor(private media: ObservableMedia, private productService: ProductService) {
     this.products$ = this.productService.getAll();
 
-    // If the initial screen size is xs ObservableMedia doesn't emit an event
-    // and grid-list rendering fails. Once the following issue is closed, this
-    // comment can be removed: https://github.com/angular/flex-layout/issues/388
+    // At the time of this writing, if the initial screen size is xs ObservableMedia doesn't emit an event
+    // and grid-list rendering fails (see https://github.com/angular/flex-layout/issues/388).
+    // This issue is marked as resolved, but it still exists.
+    // As a workaround, you can use startWith(3).
 
     this.columns$ = this.media.asObservable()
-      .map(mc => <number>this.breakpointsToColumnsNumber.get(mc.mqAlias))
-      .startWith(5);  // bug workaround
+      .map(mc => <number>this.breakpointsToColumnsNumber.get(mc.mqAlias));
+      // .startWith(3);  // bug workaround
   }
 }
