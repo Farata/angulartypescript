@@ -19,7 +19,7 @@
       <div class="info__bid">
         <span>
           <span class="info__bid-value"
-                ngClass.lt-md="info__bid-value--lt-md">{{ product?.price | currency:'USD':true:'.0' }}</span>
+                ngClass.lt-md="info__bid-value--lt-md">{{ product?.price | currency:'USD':'symbol':'.0' }}</span>
           <span class="info__bid-value-decimal"
                 ngClass.lt-md="info__bid-value-decimal--lt-md">.00</span>
         </span>
@@ -29,7 +29,7 @@
       <button class="info__bid-button"
               mat-raised-button
               color="accent">
-        PLACE BID {{ (product?.price + 5) | currency:'USD':true:'.0' }}
+        PLACE BID {{ (product?.price + 5) | currency:'USD':'symbol':'.0' }}
       </button>
     </div>
   </div>
