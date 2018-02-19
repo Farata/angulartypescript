@@ -8,7 +8,7 @@
 
         <span class="tile__price-tag"
               ngClass.xs="tile__price-tag--xs">
-          {{ product.price | currency:'USD':true:'.0' }}
+          {{ product.price | currency:'USD':'symbol':'.0' }}
         </span>
 
         <div class="tile__thumbnail"
