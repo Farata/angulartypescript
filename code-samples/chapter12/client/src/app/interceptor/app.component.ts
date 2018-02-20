@@ -24,7 +24,7 @@ export class AppComponent {
   constructor(private httpClient: HttpClient) {}
 
   addProduct(formValue){
-    this.response$=this.httpClient.post<{message: string}>("/api/addproduct",
+    this.response$=this.httpClient.post<{message: string}>("/api/product",
       formValue)
       .map (data=> data.message)
   }
