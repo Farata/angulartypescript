@@ -4,18 +4,19 @@ import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'product',
-  template: `<div class="ebay">
-                <h2 >eBay component</h2>
-               Search criteria: {{searchFor | async}}
-               </div>`,
+  template: `
+    <div class="ebay">
+      <h2>eBay component</h2>
+      Search criteria: {{searchFor$ | async}}
+    </div>`,
   styles: ['.ebay {background: cyan}']
 })
 export class EbayComponent {
 
-  searchFor: Observable<string>;
+  searchFor$: Observable<string>;
 
   constructor(private state: StateService) {
 
-      this.searchFor = state.getState();
+      this.searchFor$ = state.getState();
   }
 }
