@@ -18,25 +18,23 @@ interface Product {
        {{product.title}}: {{product.price | currency}}
     </li>
   </ul>
-  {{error}}  
+  {{error}}
   `})
 export class AppComponent implements OnInit{
 
   products: Product[] = [];
-  theDataSource: Observable<Product[]>;
+  theDataSource$: Observable<Product[]>;
   productSubscription: Subscription;
   error: string;
 
   constructor(private httpClient: HttpClient) {
-    this.theDataSource = this.httpClient.get<Product[]>('/api/products');
+    this.theDataSource$ = this.httpClient.get<Product[]>('/api/products');
   }
 
   ngOnInit(){
-    this.productSubscription = this.theDataSource
+    this.productSubscription = this.theDataSource$
       .subscribe(
-      data => {
-          this.products=data;
-      },
+      data => this.products=data,
         (err: HttpErrorResponse) =>
         this.error = `Can't get products. Got ${err.message}`
     );

@@ -13,10 +13,10 @@ app.post("/api/product", (req, res) => {
 
     if (Math.random() < 0.5) { // emulate random errors
         res.status(500);
-        res.send({'message': 'Server responded: error adding product '
-            + req.body.title});
+        res.send({'message': `Server responded: error adding product
+                                ${req.body.title}`});
     } else {
-        res.send({'message': 'Server responded: added ' + req.body.title});
+        res.send({'message': `Server responded: added ${req.body.title}`});
     }
 });
 

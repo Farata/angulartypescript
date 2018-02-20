@@ -28,9 +28,8 @@ export class AppComponent {
       .subscribe(
         data =>  this.response = data['message'],
         (err: HttpErrorResponse) =>
-            this.response = "Can't add product. Error code:" +
-              err.message + " " +
-              err.error.message
+            this.response = `Can't add product. Error code:
+              ${err.message} ${err.error.message}`
       );
   }
 }

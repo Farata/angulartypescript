@@ -10,11 +10,11 @@ app.post("/api/product", (req, res) => {
     console.log(`Received new product ${req.body.title} ${req.body.price}`);
     if (Math.random() < 0.5) {
         res.status(500);
-        res.send({ 'message': 'Server responded: error adding product '
-                + req.body.title });
+        res.send({ 'message': `Server responded: error adding product
+                                ${req.body.title}` });
     }
     else {
-        res.send({ 'message': 'Server responded: added ' + req.body.title });
+        res.send({ 'message': `Server responded: added ${req.body.title}` });
     }
 });
 const server = app.listen(8000, "localhost", () => {
