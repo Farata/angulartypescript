@@ -4,7 +4,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/of';
 import {Component} from "@angular/core";
 
-interface IProduct {
+interface Product {
   id: number,
   title: string,
   price: number
@@ -22,10 +22,10 @@ interface IProduct {
   `})
 export class AppComponentAsync{
 
-  products$: Observable<IProduct[]>;
+  products$: Observable<Product[]>;
   error:string;
   constructor(private httpClient: HttpClient) {
-    this.products$ = this.httpClient.get<IProduct[]>('/api/products')
+    this.products$ = this.httpClient.get<Product[]>('/api/products')
       .catch( err => {
           this.error = `Can't get products. Got ${err.status} from ${err.url}`;
           return Observable.of([]);    // empty observable array
