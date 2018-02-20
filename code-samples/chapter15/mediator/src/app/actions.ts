@@ -15,6 +15,6 @@ export class SearchSuccessAction implements Action {
   constructor(public payload: { searchResults: string[] }) {}
 }
 
-export type Actions
+export type SearchActions
   = SearchAction
   | SearchSuccessAction;

@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import {
-  Actions,
+  SearchActions,
   SEARCH,
   SEARCH_SUCCESS,
   SearchAction,
@@ -16,7 +16,7 @@ const initialState: State = {
   searchResults: []
 };
 
-export function reducer(state = initialState, action: Actions): State {
+export function reducer(state = initialState, action: SearchActions): State {
   switch (action.type) {
 
     case SEARCH: {

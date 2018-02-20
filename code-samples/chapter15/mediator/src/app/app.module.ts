@@ -8,14 +8,15 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import {environment} from '../environments/environment';
 import { AppComponent } from './app.component';
-import {ReactiveFormsModule} from "@angular/forms";
-import {RouterModule} from "@angular/router";
-import {EbayComponent} from "./ebay.component";
-import {SearchComponent} from "./search.component";
-import {LocationStrategy, HashLocationStrategy} from "@angular/common";
-import {AmazonComponent} from "./amazon.component";
+import {ReactiveFormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
+import {EbayComponent} from './ebay.component';
+import {SearchComponent} from './search.component';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+import {AmazonComponent} from './amazon.component';
 import {reducer} from './reducers';
-import {SearchEffects, ProductService} from './effects';
+import {SearchEffects} from './effects';
+import {ProductService} from './product.service';
 
 @NgModule({
   imports: [ BrowserModule, CommonModule, ReactiveFormsModule,
