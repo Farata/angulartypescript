@@ -8,7 +8,7 @@ const app = express();
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../simple-websocket-client.html')));
 const httpServer = app.listen(8000, "localhost", () => {
     const { port } = httpServer.address();
-    console.log('HTTP server is listening on %s', port);
+    console.log(`HTTP server is listening on ${port}`);
 });
 // WebSocket Server
 const wsServer = new ws_1.Server({ port: 8085 });
