@@ -10,7 +10,7 @@ app.get('/', (req, res) =>
 
 const httpServer = app.listen(8000, "localhost", () => {
     const {port} = httpServer.address();
-    console.log('HTTP server is listening on %s', port);
+    console.log(`HTTP server is listening on ${port}`);
 });
 
 // WebSocket Server
