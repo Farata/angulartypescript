@@ -17,7 +17,7 @@ export class AppComponent {
 
   constructor(private store: Store<any>) {
     this.counter$ = store.pipe(select('counterState'));
-    // this.counter$ = store.pipe(map((stValue) => stValue.counte));
+    // this.counter$ = store.pipe(map((stValue) => stValue.counter)); // equivalent of select
   }
 
   increment(){

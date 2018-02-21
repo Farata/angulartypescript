@@ -5,19 +5,19 @@ const app = express();
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-interface IProduct {
+interface Product {
     id: number,
     title: string,
     price: number
 }
 
-const products: IProduct[] = [
+const products: Product[] = [
     { id:0, title: "First Product", price: 24.99 },
     { id:1, title: "Second Product", price: 64.99 },
     { id:2, title: "Third Product", price: 74.99}
 ];
 
-function getProducts(): IProduct[] {
+function getProducts(): Product[] {
     return products;
 }
 
@@ -25,7 +25,7 @@ app.get('/api/products', (req, res) => {
     res.json(getProducts());
 });
 
-function getProductById(productId: number): IProduct {
+function getProductById(productId: number): Product {
     return products.find(p => p.id === productId);
 }
 

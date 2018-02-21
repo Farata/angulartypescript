@@ -1,10 +1,4 @@
-import { createFeatureSelector, createSelector } from '@ngrx/store';
-import {
-  SearchActions,
-  SEARCH,
-  SEARCH_SUCCESS,
-  SearchAction,
-} from './actions';
+import {SearchActions, SEARCH, SEARCH_SUCCESS} from './actions';
 
 export interface State {
   searchQuery: string;
@@ -40,8 +34,3 @@ export function reducer(state = initialState, action: SearchActions): State {
 
   }
 }
-
-export const getState = createFeatureSelector('reducer');
-export const getSearchQuery = createSelector(getState, (state: State) => state.searchQuery);
-export const getSearchResults = createSelector(getState, (state: State) => state.searchResults);
-

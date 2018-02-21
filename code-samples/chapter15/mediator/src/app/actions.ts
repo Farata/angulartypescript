@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
 
-export const SEARCH = 'SEARCH';
-export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
+export const SEARCH = '[Product] search';
+export const SEARCH_SUCCESS = '[Product] search success';
 
 export class SearchAction implements Action {
   readonly type = SEARCH;
@@ -15,6 +15,4 @@ export class SearchSuccessAction implements Action {
   constructor(public payload: { searchResults: string[] }) {}
 }
 
-export type SearchActions
-  = SearchAction
-  | SearchSuccessAction;
+export type SearchActions = SearchAction | SearchSuccessAction;

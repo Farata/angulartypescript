@@ -1,22 +1,24 @@
 import {Component} from '@angular/core';
 import {Store} from '@ngrx/store';
-import {State, getSearchQuery, getSearchResults} from './reducers';
+import {State} from './reducers';
+import {getSearchQuery, getSearchResults} from './selectors';
 
 @Component({
-  selector: 'product',
-  template: `<div class="ebay">
-                <h2 >eBay component</h2>
-               Search criteria: {{ searchFor$ | async }}
+  selector: 'app-ebay',
+  template: `
+    <div class="ebay">
+      <h2>eBay component</h2>
+      Search criteria: {{ searchFor$ | async }}
 
-               <ul>
-                <li *ngFor="let p of results$ | async">{{ p }}</li>
-               </ul>
-               </div>`,
+      <ul>
+        <li *ngFor="let p of searchResults$ | async ">{{ p }}</li>
+      </ul>
+    </div>`,
   styles: ['.ebay {background: cyan}']
 })
 export class EbayComponent {
   searchFor$ = this.store.select(getSearchQuery);
-  results$ = this.store.select(getSearchResults);
+  searchResults$ = this.store.select(getSearchResults);
 
   constructor(private store: Store<State>) {}
 }

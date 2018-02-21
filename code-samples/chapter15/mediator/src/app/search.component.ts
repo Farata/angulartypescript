@@ -7,11 +7,12 @@ import { Store } from '@ngrx/store';
 import { SearchAction } from './actions';
 
 @Component({
-  selector: "search",
+  selector: 'app-search',
   template: `
-       <h2>Top-level component</h2>
+      <h2>Search component</h2>
       <input type="text" placeholder="Enter product" [formControl]="searchInput">
-    `
+    `,
+  styles: ['.main {background: yellow}']
 })
 export class SearchComponent {
 
@@ -22,7 +23,7 @@ export class SearchComponent {
 
     this.searchInput.valueChanges
       .debounceTime(300)
-      .do(value => console.log("The user entered " + value))
+      .do(value => console.log(`The user entered ${value}`))
       .subscribe(searchValue => {
         this.store.dispatch(new SearchAction({ searchQuery: searchValue }));
       });

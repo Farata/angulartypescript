@@ -5,9 +5,9 @@ import {Injectable} from '@angular/core';
 export class ProductService {
   static counter = 0;
 
-  generate(searchQuery: string): Observable<string[]> {
-    const generator = () => `Product ${searchQuery}, price ${ProductService.counter++}`;
-    const results = Array.from({ length: 5 }, generator);
-    return Observable.of(results).delay(500);
+  getProducts(searchQuery: string): Observable<string[]> {
+    const productGenerator = () => `Product ${searchQuery}${ProductService.counter++}`;
+    const products = Array.from({ length: 5 }, productGenerator);
+    return Observable.of(products).delay(1000);
   }
 }

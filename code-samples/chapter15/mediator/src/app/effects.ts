@@ -16,7 +16,7 @@ export class SearchEffects {
   search$ = this.actions$
     .ofType(SEARCH)
     .map((action: SearchAction) => action.payload)
-    .switchMap(({ searchQuery }) => this.generator.generate(searchQuery))
+    .switchMap(({ searchQuery }) => this.generator.getProducts(searchQuery))
     .map(searchResults => new SearchSuccessAction({ searchResults }));
 
   constructor(
