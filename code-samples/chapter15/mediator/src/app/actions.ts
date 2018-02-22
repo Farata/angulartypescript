@@ -9,6 +9,12 @@ export class SearchAction implements Action {
   constructor(public payload: { searchQuery: string }) {}
 }
 
+export class Search22Action implements Action {
+  readonly type = SEARCH;
+
+  constructor(public payload: { searchQuery: string }) {}
+}
+
 export class SearchSuccessAction implements Action {
   readonly type = SEARCH_SUCCESS;
 

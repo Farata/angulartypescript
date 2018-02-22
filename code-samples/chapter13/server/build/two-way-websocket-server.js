@@ -5,8 +5,7 @@ var wsServer = new ws_1.Server({ port: 8085 });
 console.log('WebSocket server is listening on port 8085');
 wsServer.on('connection', websocket => {
     websocket.send('Hello from the two-way WebSocket server');
-    websocket.onmessage =
-            message => console.log(`Server received: ${message}`);
+    websocket.onmessage = (message) => console.log(`Server received: ${message}`);
     websocket.onerror = (error) => console.log(`The server received: ${error['code']}`);
     websocket.onclose = (why) => console.log(`The server received: ${why.code} ${why.reason}`);
 });

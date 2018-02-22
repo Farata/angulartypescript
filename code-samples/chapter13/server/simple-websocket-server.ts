@@ -18,8 +18,13 @@ const wsServer = new Server({port:8085});
 console.log('WebSocket server is listening on port 8085');
 
 wsServer.on('connection',
-           wsClient =>
-               wsClient.send('This message was pushed by the WebSocket server'));
+           wsClient => {
+               wsClient.send('This message was pushed by the WebSocket server');
+
+               wsClient.onerror = (error) =>
+                   console.log(`The server received: ${error['code']}`);
+           }
+);
 
 // Broadcasting to all clients
 /*

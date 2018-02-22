@@ -13,7 +13,7 @@ import {ProductService} from './product.service';
 @Injectable()
 export class SearchEffects {
   @Effect()
-  search$ = this.actions$
+  loadProducts$ = this.actions$
     .ofType(SEARCH)
     .map((action: SearchAction) => action.payload)
     .switchMap(({ searchQuery }) => this.generator.getProducts(searchQuery))

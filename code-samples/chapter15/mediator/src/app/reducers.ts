@@ -31,6 +31,5 @@ export function reducer(state = initialState, action: SearchActions): State {
     default: {
       return state;
     }
-
   }
 }

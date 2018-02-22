@@ -4,7 +4,7 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/do';
 
 import { Store } from '@ngrx/store';
-import { SearchAction } from './actions';
+import { SearchAction, Search22Action } from './actions';
 
 @Component({
   selector: 'app-search',

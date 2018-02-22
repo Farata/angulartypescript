@@ -9,8 +9,7 @@ wsServer.on('connection',
 
         websocket.send('Hello from the two-way WebSocket server');
 
-        websocket.onmessage =
-            message =>
+        websocket.onmessage = (message) =>
                 console.log(`Server received: ${message}`);
 
         websocket.onerror = (error) =>

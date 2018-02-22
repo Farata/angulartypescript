@@ -15,6 +15,7 @@
     };
 
     ws.onerror = function(event){
+        ws.close();
         console.log(`Error ${event}`);
     }
 </script>
