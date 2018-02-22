@@ -21,6 +21,7 @@ export class LoginComponent {
       this.router.navigate(['/home']);
       this.wrongCredentials = false;
     } else {
+      this.router.navigate(['/login']);
       this.wrongCredentials = true;
     }
   }
