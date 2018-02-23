@@ -24,7 +24,7 @@ import {ProductService} from './product.service';
       {path: '',        component: EbayComponent},
       {path: 'amazon', component: AmazonComponent}]),
 
-    StoreModule.forRoot({ reducer }),
+    StoreModule.forRoot({ 'myReducer': reducer }),
     EffectsModule.forRoot([SearchEffects]),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
   ],
