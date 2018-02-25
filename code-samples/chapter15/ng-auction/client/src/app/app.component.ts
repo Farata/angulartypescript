@@ -1,9 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnDestroy, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
-import { Actions, ofType } from '@ngrx/effects';
-import { Subscription } from 'rxjs/Subscription';
-import { SearchActionTypes } from './store/actions';
-
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'nga-root',
@@ -11,17 +6,4 @@ import { SearchActionTypes } from './store/actions';
   templateUrl: './app.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent implements OnDestroy {
-  @ViewChild(MatSidenav) sidenav: MatSidenav;
-  private readonly searchActionSubscription: Subscription;
-
-  constructor(private readonly actions$: Actions) {
-    this.searchActionSubscription = this.actions$
-      .pipe(ofType(SearchActionTypes.Search))
-      .subscribe(() => this.sidenav.close());
-  }
-
-  ngOnDestroy() {
-    this.searchActionSubscription.unsubscribe();
-  }
-}
+export class AppComponent {}

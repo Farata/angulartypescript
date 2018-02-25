@@ -1,16 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
+import { ErrorStateMatcher } from '@angular/material/core';
+import { Router } from '@angular/router';
 import {
   FormBuilder,
   FormControl,
   FormGroup,
   FormGroupDirective,
-  ValidationErrors,
-  Validators
+  Validators,
+  ValidationErrors
 } from '@angular/forms';
-import { ErrorStateMatcher } from '@angular/material/core';
-import { Store } from '@ngrx/store';
-import { Search } from '../../../store/actions';
-
 
 @Component({
   selector: 'nga-search-form',
@@ -19,17 +17,15 @@ import { Search } from '../../../store/actions';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SearchFormComponent {
+  @Output() search = new EventEmitter();
   readonly matcher = new ShowOnFormInvalidStateMatcher();
   readonly searchForm: FormGroup;
 
-  constructor(
-    private readonly store: Store<any>,
-    fb: FormBuilder
-  ) {
+  constructor(fb: FormBuilder, private router: Router) {
     this.searchForm = fb.group({
-      title: [ , Validators.minLength(2) ],
-      minPrice: [ , Validators.min(0) ],
-      maxPrice: [ , Validators.min(0) ]
+      title   : [, Validators.minLength(2)],
+      minPrice: [, Validators.min(0)],
+      maxPrice: [, Validators.min(0)]
     }, {
       validator: [ minLessThanMaxValidator ]
     });
@@ -37,9 +33,10 @@ export class SearchFormComponent {
 
   onSearch(): void {
     if (this.searchForm.valid) {
-      this.store.dispatch(new Search({
-        params: withoutEmptyValues(this.searchForm.value)
-      }));
+      this.search.emit();
+      this.router.navigate([ '/search' ], {
+        queryParams: withoutEmptyValues(this.searchForm.value)
+      });
     }
   }
 }
@@ -57,10 +54,10 @@ export class ShowOnFormInvalidStateMatcher implements ErrorStateMatcher {
  *
  * See: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
  */
-
 function withoutEmptyValues(object: any): any {
   return Object.keys(object).reduce((queryParams: any, key) => {
-    return Object.assign(queryParams, object[ key ] ? { [ key ]: object[ key ] } : {});
+    if (object[key]) { queryParams[key] = object[key]; }
+    return queryParams;
   }, {});
 }
 
@@ -69,8 +66,8 @@ function withoutEmptyValues(object: any): any {
  * make sure that the min is less or equal to the max.
  */
 function minLessThanMaxValidator(group: FormGroup): ValidationErrors | null {
-  const minPrice = group.controls[ 'minPrice' ].value;
-  const maxPrice = group.controls[ 'maxPrice' ].value;
+  const minPrice = group.controls['minPrice'].value;
+  const maxPrice = group.controls['maxPrice'].value;
 
   if (minPrice && maxPrice) {
     return minPrice <= maxPrice ? null : { minLessThanMax: true };
