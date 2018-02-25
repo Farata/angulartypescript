@@ -1,8 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import { filter, map, switchMap } from 'rxjs/operators';
-import { Product, ProductService } from '../shared/services';
+import { filter, map } from 'rxjs/operators';
+import { Subscription } from 'rxjs/Subscription';
+import { Product } from '../shared/services';
+import { getSelectedProduct, getSuggestedProducts, LoadById, LoadSuggested } from './store';
+
 
 @Component({
   selector: 'nga-product',
@@ -10,21 +14,29 @@ import { Product, ProductService } from '../shared/services';
   templateUrl: './product.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProductComponent {
+export class ProductComponent implements OnDestroy {
   readonly product$: Observable<Product>;
   readonly suggestedProducts$: Observable<Product[]>;
+  private readonly routeParamsSubscription: Subscription;
 
   constructor(
-    private route: ActivatedRoute,
-    private productService: ProductService
+    private readonly route: ActivatedRoute,
+    private readonly store: Store<any>
   ) {
-    this.product$ = this.route.paramMap
+    this.product$ = this.store.pipe(select(getSelectedProduct));
+    this.suggestedProducts$ = this.store.pipe(select(getSuggestedProducts));
+    this.routeParamsSubscription = this.route.paramMap
       .pipe(
         map(params => parseInt(params.get('productId') || '', 10)),
-        filter(productId => !!productId),
-        switchMap(productId => this.productService.getById(productId))
-      );
+        filter(productId => !!productId)
+      )
+      .subscribe(productId => {
+        this.store.dispatch(new LoadById({ productId }));
+        this.store.dispatch(new LoadSuggested({ productId }));
+      });
+  }
 
-    this.suggestedProducts$ = this.productService.getAll();
+  ngOnDestroy() {
+    this.routeParamsSubscription.unsubscribe();
   }
 }

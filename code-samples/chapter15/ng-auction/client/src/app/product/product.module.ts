@@ -1,13 +1,17 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
-
-import { ProductComponent } from './product.component';
+import { RouterModule } from '@angular/router';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 import { ProductDetailComponent } from './product-detail';
 import { ProductSuggestionComponent } from './product-suggestion';
+
+import { ProductComponent } from './product.component';
+import { BidEffects, ProductEffects, reducers } from './store';
+
 
 @NgModule({
   imports: [
@@ -16,6 +20,10 @@ import { ProductSuggestionComponent } from './product-suggestion';
     RouterModule.forChild([
       { path: '', component: ProductComponent }
     ]),
+
+    StoreModule.forFeature('productPage', reducers),
+    EffectsModule.forFeature([ BidEffects, ProductEffects ]),
+
     MatButtonModule,
     MatGridListModule
   ],
@@ -25,4 +33,5 @@ import { ProductSuggestionComponent } from './product-suggestion';
     ProductSuggestionComponent
   ]
 })
-export class ProductModule {}
+export class ProductModule {
+}
