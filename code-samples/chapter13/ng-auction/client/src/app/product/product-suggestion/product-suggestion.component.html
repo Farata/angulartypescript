@@ -8,7 +8,7 @@
        [routerLink]="['/products', product.id]">
 
       <div class="tile__thumbnail"
-           [ngStyle]="{'background-image': 'url(' + product.imageUrl + ')'}"></div>
+           [ngStyle]="{'background-image': 'url(' + urlFor(product) + ')'}"></div>
     </a>
   </mat-grid-tile>
 </mat-grid-list>
