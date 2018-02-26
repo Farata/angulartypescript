@@ -1,6 +1,7 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  Inject,
   Input,
   OnChanges, OnInit,
   SimpleChange
@@ -9,6 +10,7 @@ import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 import { combineLatest } from 'rxjs/observable/combineLatest';
 import { startWith} from 'rxjs/operators';
+import { API_BASE_URL } from '../../app.tokens';
 import { BidMessage, BidService, Product } from '../../shared/services';
 
 @Component({
@@ -22,7 +24,9 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   latestBids$: Observable<number>;
   @Input() product: Product;
 
-  constructor(private bidService: BidService) {}
+  constructor(
+    @Inject(API_BASE_URL) private readonly baseUrl: string,
+    private readonly bidService: BidService) {}
 
   ngOnInit() {
     this.latestBids$ = combineLatest(
@@ -38,5 +42,9 @@ export class ProductDetailComponent implements OnInit, OnChanges {
 
   placeBid(price: number) {
     this.bidService.placeBid(this.product.id, price);
+  }
+
+  urlFor(product: Product): string {
+    return `${this.baseUrl}/${product.imageUrl}`;
   }
 }
