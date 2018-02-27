@@ -4,8 +4,8 @@ import 'rxjs/add/operator/reduce';
 import 'rxjs/add/operator/map';
 
 enum Action{
-    buy = 'BUY',
-    sell = 'SELL'
+    Buy = 'BUY',
+    Sell = 'SELL'
 }
 
 class Order{
@@ -40,9 +40,9 @@ traders.next(secondTrader);
 
 
 
-let order1:Order = new Order(1, 1,'IBM',100,Action.buy);
-let order2:Order = new Order(2, 1,'AAPL',200,Action.sell);
-let order3:Order = new Order(3, 2,'MSFT',500,Action.buy);
+let order1:Order = new Order(1, 1,'IBM',100,Action.Buy);
+let order2:Order = new Order(2, 1,'AAPL',200,Action.Sell);
+let order3:Order = new Order(3, 2,'MSFT',500,Action.Buy);
 
 firstTrader.orders.next( order1);
 firstTrader.orders.next( order2);
