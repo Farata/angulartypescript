@@ -31,15 +31,7 @@ import { reducers, RouterEffects, SearchEffects } from './store';
     RouterModule.forRoot(routes),
 
     StoreModule.forRoot({ ...reducers, router: routerReducer }),
-
-    /**
-     * @ngrx/router-store keeps router state up-to-date in the store.
-     */
     StoreRouterConnectingModule.forRoot({
-      /**
-       * They stateKey defines the name of the state used by the router-store reducer.
-       * This matches the key defined in the map of reducers
-       */
       stateKey: 'router'
     }),
     StoreDevtoolsModule.instrument({
