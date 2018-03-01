@@ -9,7 +9,7 @@
   <div fxFlex="50%">
     <img class="thumbnail"
          [attr.alt]="product.title"
-         [attr.src]="product.imageUrl">
+         [attr.src]="urlFor(product)">
   </div>
 
   <div fxFlex="50%" *ngIf="latestBids$ | async as price">

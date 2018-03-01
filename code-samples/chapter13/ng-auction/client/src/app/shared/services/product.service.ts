@@ -36,23 +36,23 @@ export class HttpProductService implements ProductService {
   ) {}
 
   getAll(): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.baseUrl}/products`);
+    return this.http.get<Product[]>(`${this.baseUrl}/api/products`);
   }
 
   getById(productId: number): Observable<Product> {
-    return this.http.get<Product>(`${this.baseUrl}/products/${productId}`);
+    return this.http.get<Product>(`${this.baseUrl}/api/products/${productId}`);
   }
 
   getByCategory(category: string): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.baseUrl}/categories/${category}`);
+    return this.http.get<Product[]>(`${this.baseUrl}/api/categories/${category}`);
   }
 
   getAllCategories(): Observable<string[]> {
-    return this.http.get<string[]>(`${this.baseUrl}/categories`);
+    return this.http.get<string[]>(`${this.baseUrl}/api/categories`);
   }
 
   search(params: ProductSearchParams): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.baseUrl}/products`, { params });
+    return this.http.get<Product[]>(`${this.baseUrl}/api/products`, { params });
   }
 }
 

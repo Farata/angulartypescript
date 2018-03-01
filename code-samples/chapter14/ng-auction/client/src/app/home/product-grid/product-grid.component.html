@@ -11,7 +11,7 @@
       </span>
 
       <div class="tile__thumbnail"
-           [ngStyle]="{'background-image': 'url(' + product.imageUrl + ')'}"></div>
+           [ngStyle]="{'background-image': 'url(' + urlFor(product) + ')'}"></div>
 
       <div class="tile__title"
            ngClass.xs="tile__title--xs"
