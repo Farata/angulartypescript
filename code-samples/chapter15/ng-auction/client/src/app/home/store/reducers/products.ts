@@ -1,7 +1,6 @@
 import { Product } from '../../../shared/services';
 import { ProductsActions, ProductsActionTypes } from '../actions';
 
-
 export interface State {
   data: Product[];
   loading: boolean;
@@ -48,9 +47,10 @@ export function reducer(state = initialState, action: ProductsActions): State {
 }
 
 /**
- * Selectors
- */
-
+Accessors for the data in the products state object
+These accessors are used to create selectors defined in index.ts
+We're defining these functions here to keep them where the State interface is declared
+*/
 export const getData = (state: State) => state.data;
 export const getDataLoading = (state: State) => state.loading;
 export const getDataLoadingError = (state: State) => state.loadingError;

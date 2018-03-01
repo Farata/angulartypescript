@@ -9,7 +9,7 @@ export interface HomeState {
 }
 
 export interface State extends fromRoot.State {
-  home: HomeState;
+  homePage: HomeState;
 }
 
 export const reducers = {
@@ -21,7 +21,7 @@ export const reducers = {
  * Selectors
  */
 
-export const getHomeState = createFeatureSelector<HomeState>('home');
+export const getHomeState = createFeatureSelector<HomeState>('homePage');
 
 export const getProductsState = createSelector(getHomeState, state => state.products);
 export const getProductsData = createSelector(getProductsState, fromProducts.getData);

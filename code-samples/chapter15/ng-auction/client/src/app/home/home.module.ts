@@ -33,7 +33,7 @@ const routes: Route[] = [
     MatGridListModule,
     MatTabsModule,
 
-    StoreModule.forFeature('home', reducers),
+    StoreModule.forFeature('homePage', reducers),
     EffectsModule.forFeature([ CategoriesEffects, ProductsEffects ])
   ],
   declarations: [

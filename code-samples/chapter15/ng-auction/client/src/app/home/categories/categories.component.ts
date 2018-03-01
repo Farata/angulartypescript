@@ -15,7 +15,6 @@ import {
   State
 } from '../store';
 
-
 @Component({
   selector: 'nga-categories',
   styleUrls: [ './categories.component.scss' ],

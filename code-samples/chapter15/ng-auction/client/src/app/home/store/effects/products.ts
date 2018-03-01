@@ -17,6 +17,11 @@ import {
 
 @Injectable()
 export class ProductsEffects {
+
+  constructor(
+    private readonly actions$: Actions,
+    private readonly productService: ProductService) {}
+
   @Effect()
   loadProducts$: Observable<Action> = this.actions$
     .pipe(
@@ -35,19 +40,13 @@ export class ProductsEffects {
     );
 
   @Effect()
-  searchProducts: Observable<Action> = this.actions$
+  searchProducts$: Observable<Action> = this.actions$
     .pipe(
       ofType(ProductsActionTypes.Search),
       map((action: SearchProducts) => action.payload.params),
       switchMap(params => this.productService.search(params)),
       handleLoadedProducts()
     );
-
-  constructor(
-    private readonly actions$: Actions,
-    private readonly productService: ProductService
-  ) {
-  }
 }
 
 const handleLoadedProducts = () =>
