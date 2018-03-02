@@ -13,9 +13,10 @@ function ssnValidator(control: FormControl): ValidationErrors | null{
   template: `
     <form [formGroup]="myForm">
       SSN: <input type="text" formControlName="socialSecurity">
-      <span [hidden]="!myForm.hasError('ssn', 'socialSecurity')"> 
+      <span [hidden]="!(myForm.get('socialSecurity').dirty 
+                        && myForm.hasError('ssn', 'socialSecurity'))"> 
              {{myForm.getError('ssn', 'socialSecurity')?.description}}
-           </span>
+      </span>
     </form>
   `
 })
