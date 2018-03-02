@@ -12,13 +12,18 @@ function ssnValidator(control: FormControl): ValidationErrors | null{
   selector: 'app-root',
   template: `
     <form [formGroup]="myForm">
-      SSN: <input type="text" formControlName="socialSecurity">
+      SSN: <input type="text" formControlName="socialSecurity" class="social">
       <span [hidden]="!(myForm.get('socialSecurity').dirty 
                         && myForm.hasError('ssn', 'socialSecurity'))"> 
              {{myForm.getError('ssn', 'socialSecurity')?.description}}
       </span>
     </form>
-  `
+  `,
+  styles:[`.social.ng-dirty.ng-invalid 
+            { 
+              background-color: lightpink;
+            }`
+          ]
 })
 export class AppComponent {
   myForm: FormGroup;
