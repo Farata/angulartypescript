@@ -1,7 +1,7 @@
 function StockQuoteGenerator(symbol){
       this.symbol = symbol;
       setInterval(() => {
-                 console.log("The price quote for " + this.symbol
+                 console.log("The price of " + this.symbol
                          + " is " + Math.random());
               }, 1000);
 }

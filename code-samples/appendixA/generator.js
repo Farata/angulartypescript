@@ -7,15 +7,15 @@ function* getStockPrice(symbol){
   }
 }
 
-const priceGenerator = getStockPrice("IBM"); 
+const priceGenerator = getStockPrice("IBM");
 
-const limitPrice = 15; 
-const price = 100;
+const limitPrice = 15;
+let price = 100;
 
-while ( price > limitPrice){ 
+while ( price > limitPrice){
 
-   price = priceGenerator.next().value; 
+   price = priceGenerator.next().value;
    console.log (`The generator returned ${price}`);
 }
 
-console.log(`buying at ${price} !!!`); 
+console.log(`buying at ${price} !!!`);
