@@ -1,4 +1,4 @@
-This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). All code samples use Angular 5. 
+This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). Currently, all code samples use Angular 5 but by the time this book goes to print, we'll upgrade the code to Angular 6. 
 
 We used Angular CLI 1.7.0 (or newer) for projects generation. Install the latest version globally to run these samples.
 
@@ -6,7 +6,7 @@ Each chapter comes with serveral sample apps that are included in the same proje
 
 You can read more about configuring multiple apps in the same project here: https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project
 
-In chapters 2, 3, and 5 we build the ngAuction app that uses Bootstrap 4, and starting from chapter 7 we re-write ngAuction to using Angular Material and Flex Layout libraries (no more Bootstrap).Starting from chapter 13, you need to start the server and the client portions of ngAuction separately. The final version of ngAuction uses ngrx for app state management.
+In chapters 2, 3, and 5 we build the ngAuction app that uses Bootstrap 4, and starting from chapter 7 we re-write ngAuction to using Angular Material and Flex Layout libraries (no more Bootstrap).To ngAction that comes with chapters 13,14, and 15 you need to start the server and the client in separate command windows. The ngAuction from chapter 15 uses ngrx for app state management.
 
 In the video Angular Applied from http://bit.ly/2iiKjDV, Yakov Fain shows how to build one of the sample apps from the book from scratch. 
 
