@@ -1,5 +1,6 @@
 {
   "name": "ng-auction",
+  "description": "ngAuction with ngrx",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
