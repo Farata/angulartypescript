@@ -18,7 +18,9 @@ import {HttpClient} from "@angular/common/http";
 })
 export class AppComponent implements OnInit{
   private baseWeatherURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-  private urlSuffix = "&units=imperial&appid=ca3f6d6ca3973a518834983d0b318f73";
+  // To run this app, you need to first request your own free key 
+  // at http://api.openweathermap.org and replace 12345 with your own key. 
+  private urlSuffix = "&units=imperial&appid=12345";
 
   searchInput = new FormControl();
   weather: string;
