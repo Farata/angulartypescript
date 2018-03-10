@@ -14,7 +14,7 @@ export class SearchEffects {
     .pipe(
       map((action: SearchAction) => action.payload),
       switchMap(({ searchQuery }) => this.productService.getProducts(searchQuery)),
-      map(searchResults => new SearchSuccessAction({ searchResults }))
+      map(searchResults => new SearchSuccessAction({searchResults}))
     );
 
   constructor(private actions$: Actions,

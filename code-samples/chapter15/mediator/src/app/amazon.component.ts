@@ -8,10 +8,10 @@ import {getSearchQuery, getSearchResults} from './selectors';
   template: `
     <div class="amz">
       <h2>Amazon component</h2>
-      Search criteria: {{ searchFor$ | async }}
+      Search criteria: {{searchFor$ | async}}
 
       <ul>
-        <li *ngFor="let p of searchResults$ | async">{{ p }}</li>
+        <li *ngFor="let p of searchResults$ | async">{{p}}</li>
       </ul>
     </div>`,
   styles: ['.amz {background: pink}']

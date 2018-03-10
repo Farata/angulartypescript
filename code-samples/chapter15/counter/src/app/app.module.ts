@@ -14,7 +14,6 @@ import { ChildComponent } from './child/child.component';
     BrowserModule,
     StoreModule.forRoot({counterState: counterReducer})
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
