@@ -5,6 +5,7 @@ dist
 tmp
 out-tsc
 public
+build
 
 # dependencies
 node_modules
@@ -33,6 +34,8 @@ node_modules
 npm-debug.log
 testem.log
 /typings
+
+
 
 # e2e
 /e2e/*.js
