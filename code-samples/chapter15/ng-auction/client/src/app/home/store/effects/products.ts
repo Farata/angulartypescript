@@ -31,6 +31,14 @@ export class ProductsEffects {
     );
 
   @Effect()
+  loadProducts1$: Observable<Action> = this.actions$
+    .pipe(
+      ofType(ProductsActionTypes.Load),
+      switchMap(() => this.productService.getAll()),
+      handleLoadedProducts()
+    );
+
+  @Effect()
   loadByCategory$: Observable<Action> = this.actions$
     .pipe(
       ofType<LoadProductsByCategory>(ProductsActionTypes.LoadProductsByCategory),

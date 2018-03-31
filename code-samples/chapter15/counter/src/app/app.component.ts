@@ -16,7 +16,7 @@ export class AppComponent {
   counter$: Observable<number>;
 
   constructor(private store: Store<any>) {
-    this.counter$ = store.pipe(select('counterState'));
+    this.counter$ = store.select('counterState');
     // this.counter$ = store.pipe(map((stValue) => stValue.counter)); // equivalent of select
   }
 
