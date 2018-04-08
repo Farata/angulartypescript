@@ -1,10 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {FormGroup, FormControl, Validators} from "@angular/forms";
+import {FormGroup, FormControl} from "@angular/forms";
 import {SsnValidatorService} from "./ssn-validator.service";
-import 'rxjs/add/operator/switchMap';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/debounceTime';
+import {switchMap, filter, debounceTime} from 'rxjs/operators';
 
 function ssnValidator(control: FormControl): {[key: string]: any} {
   const value: string = control.value || '';
@@ -43,9 +40,11 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     const ssnControl = this.myForm.get('ssnControl');
     ssnControl.valueChanges
-      .debounceTime(2000)
-      .filter(val => val.length === 9)
-      .switchMap(ssnValue => this.ssnValidatorService.checkWorkAuthorizationV2(ssnValue))
+      .pipe(debounceTime(2000),
+            filter(val => val.length === 9),
+            switchMap(ssnValue =>
+                  this.ssnValidatorService.checkWorkAuthorizationV2(ssnValue))
+      )
       .subscribe((res) => {
           this.myForm.setErrors(res);
         }

@@ -1,6 +1,6 @@
 This folder contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). Currently, all code samples use Angular 5 but by the time this book goes to print, we'll upgrade the code to Angular 6. 
 
-We used Angular CLI 1.7.0 (or newer) for projects generation. Install the latest version globally to run these samples.
+We used Angular CLI 1.7.3 (or newer) for projects generation. Install the latest version globally to run these samples.
 
 Each chapter comes with serveral sample apps that are included in the same project, e.g. chapter3/router-samples. To run a particular app, you need to know its name - open the file .angular-cli.json and see the names of the apps configured in the apps property there. For example, the first app is configured as ```"name": "basic"```. To run this app (after you did ```npm install```), run the following command: ```ng serve --app basic```.
 
