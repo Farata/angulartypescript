@@ -15,6 +15,7 @@
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
+    "@angular/cdk": "^5.2.4",
     "@angular/core": "^5.0.0",
     "@angular/forms": "^5.0.0",
     "@angular/http": "^5.0.0",
@@ -23,7 +24,7 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
-    "@angular/flex-layout": "^5.0.0-beta.13",
+    "@angular/flex-layout": "^5.0.0-beta.14",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
