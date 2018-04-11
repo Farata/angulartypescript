@@ -1,13 +1,12 @@
 import {Component} from '@angular/core';
-import { FormControl, ReactiveFormsModule} from '@angular/forms';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/do';
+import {FormControl} from '@angular/forms';
+import {debounceTime} from 'rxjs/operators'
 
-import {StateService} from "./state.service";
+import {StateService} from './state.service';
 
 @Component({
   selector: "search",
-  template: `    
+  template: `
       <input type="text" placeholder="Enter product" [formControl]="searchInput">
     `
 })
@@ -19,8 +18,7 @@ export class SearchComponent {
     this.searchInput = new FormControl('');
 
     this.searchInput.valueChanges
-      .debounceTime(300)
-      .do(value => console.log("The user entered " + value))
+      .pipe(debounceTime(300))
       .subscribe(searchValue => this.state.searchCriteria = searchValue);
   }
 }

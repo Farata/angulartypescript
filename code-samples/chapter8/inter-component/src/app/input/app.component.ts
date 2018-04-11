@@ -9,10 +9,10 @@ import { Component } from '@angular/core';
   `
 })
 export class AppComponent {
-  stock:string;
+  stock: string;
   readonly numberOfShares = 100;
 
-  onChangeEvent({target}):void{
-    this.stock=target.value;
+  onChangeEvent({target}): void {
+    this.stock = target.value;
   }
 }

@@ -7,31 +7,26 @@ import 'rxjs/add/observable/interval';
   selector: 'price-quoter',
   template: `<strong>
                <button (click)="buyStocks()">Buy</button>
-               {{stockSymbol}} {{lastPrice | currency: "USD": 'symbol'}}
+               {{stockSymbol}} {{lastPrice | currency: "USD"}}
              </strong>
             `,
-  styles:[`:host {background: pink; padding: 5px 15px 15px 15px;}`]
+  styles: [`:host {background: pink; padding: 5px 15px 15px 15px;}`]
 })
 export class PriceQuoterComponent {
   @Output() buy: EventEmitter <Stock> = new EventEmitter();
 
-  stockSymbol = "IBM";
+  stockSymbol = 'IBM';
   lastPrice: number;
 
   constructor() {
     Observable.interval(2000)
       .subscribe(data =>
       this.lastPrice = 100 * Math.random());
-
-    /* setInterval() is browser-only API so we used Observable.interval()
-    setInterval(() => {
-      this.lastPrice = (100*Math.random());
-    }, 2000);*/
   }
 
-  buyStocks(): void{
+  buyStocks(): void {
 
-    let stockToBuy: Stock = {
+    const stockToBuy: Stock = {
       stockSymbol: this.stockSymbol,
       bidPrice: this.lastPrice
     };
