@@ -9,16 +9,16 @@ interface Product {
 @Component({
   selector: 'app-root',
   template: `
-        <ul style="width: 100px;">
-           <li *ngFor="let product of products"
-            [class.selected]="product === selectedProduct"
-            (click) = onSelect(product)>
-              <span>{{product.id}} {{product.description}} </span>
-           </li>        
-       </ul>
-        
-        <router-outlet></router-outlet>
-    `,
+    <ul style="width: 100px;">
+      <li *ngFor="let product of products$"
+          [class.selected]="product === selectedProduct"
+          (click)=onSelect(product)>
+        <span>{{product.id}} {{product.description}} </span>
+      </li>
+    </ul>
+
+    <router-outlet></router-outlet>
+  `,
   styles:[`.selected {background-color: cornflowerblue}`]
 })
 export class AppComponent {

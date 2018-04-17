@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "ng build -prod --app restclient",
+    "build": "ng build --prod --app restclient",
     "postbuild": "npm run deploy",
     "predeploy": "rimraf ../server/build/public && mkdirp ../server/build/public",
     "deploy": "copyfiles -f dist/** ../server/build/public"

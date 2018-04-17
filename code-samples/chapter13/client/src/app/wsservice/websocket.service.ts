@@ -1,4 +1,4 @@
-import {Observable } from 'rxjs/Observable';
+import {Observable} from 'rxjs/Observable';
 
 export class WebSocketService{
 
@@ -6,7 +6,7 @@ export class WebSocketService{
   socketIsOpen = 1; // WebSocket's open
 
 
-  createObservableSocket(url:string):Observable<any>{
+  createObservableSocket(url:string): Observable<any>{
     this.ws = new WebSocket(url);
 
     return new Observable(
@@ -19,8 +19,9 @@ export class WebSocketService{
 
         this.ws.onclose = (event) => observer.complete();
 
-        return () =>
-            this.ws.close(1000, "The user disconnected");
+        return () => {
+          this.ws.close(1000, "The user disconnected");
+        }
       }
     );
   }
