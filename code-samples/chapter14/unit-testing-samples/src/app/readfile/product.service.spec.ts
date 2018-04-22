@@ -24,7 +24,9 @@ describe('Readfile app ProductService', () => {
   it('should successfully get products', async(() => {
     const productData: Product[] = [{ "id":"0", "title": "First Product", "price": 24.99 }];
     productService.getProducts()
-      .subscribe(res => expect(res).toEqual(productData));
+      .subscribe(
+        res => expect(res).toEqual(productData)
+      );
 
     // Emit the data to the subscriber
     let productsRequest = httpMock.expectOne('/data/products.json');
