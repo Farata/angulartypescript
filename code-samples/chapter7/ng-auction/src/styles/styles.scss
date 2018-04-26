@@ -29,11 +29,12 @@ html {
 }
 
 body {
-  color: #212121;
-  background-color: #f3f3f3;
   font-family: mat-font-family($nga-typography);
   line-height: mat-line-height($nga-typography, body-1);
   font-size: mat-font-size($nga-typography, body-1);
   height: 100%;
   margin: 0;
+  // color: #212121;
+  background-color: whitesmoke;
+
 }
