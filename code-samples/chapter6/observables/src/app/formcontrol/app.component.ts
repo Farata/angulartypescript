@@ -20,8 +20,7 @@ export class AppComponent {
   constructor(){
 
     this.searchInput.valueChanges
-      .pipe(
-      debounceTime(500))
+      .pipe(debounceTime(500))
       .subscribe(stock => this.getStockQuoteFromServer(stock));
   }
 

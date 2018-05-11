@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
   `],
   template: ` 
     <div fxLayout="row" class="parent" fxLayout.lt-md="column" >
-      <div fxFlex class="left">Left</div>
-      <div fxFlex class="right">Right</div>
+      <div fxFlex="30%" class="left">Left</div>
+      <div fxFlex="70%" class="right">Right</div>
     </div>
   `
 })

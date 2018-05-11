@@ -5,10 +5,10 @@ import {Subject} from "rxjs/Subject"
 @Component({
   selector: "app-root",
   template: `
-       <h3>Using Subject for emiting/subscribing to keyup and input events</h3>
-      <input type="text" placeholder="Start typing" 
-            (input)="mySubject.next($event)" (keyup)="myKeySubject.next($event)">
-    `
+    <h3>Using Subject for emiting/subscribing to keyup and input events</h3>
+    <input type="text" placeholder="Start typing"
+           (input)="mySubject$.next($event)" (keyup)="myKeySubject.next($event)">
+  `
 })
 export class AppComponent {
 
