@@ -1,6 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { Observable } from "rxjs/Observable";
-import 'rxjs/add/observable/fromEvent';
+import { Observable } from "rxjs";
 import { debounceTime, map } from 'rxjs/operators';
 
 @Component({

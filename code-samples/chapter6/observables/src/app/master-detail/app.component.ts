@@ -10,7 +10,7 @@ interface Product {
   selector: 'app-root',
   template: `
     <ul style="width: 100px;">
-      <li *ngFor="let product of products$"
+      <li *ngFor="let product of products"
           [class.selected]="product === selectedProduct"
           (click)=onSelect(product)>
         <span>{{product.id}} {{product.description}} </span>

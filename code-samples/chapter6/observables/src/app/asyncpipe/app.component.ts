@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import 'rxjs/add/observable/interval';
-import {take} from 'rxjs/operators/take';
-import {Observable} from "rxjs/Observable";
+import {take} from 'rxjs/operators';
+import {Observable} from "rxjs";
 
 @Component({
   selector: "app-root",
