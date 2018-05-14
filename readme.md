@@ -2,7 +2,7 @@ This folder contains code samples from the book "Angular Development with TypeSc
 
 Each chapter comes with serveral sample apps that may be included in the same project, e.g. chapter3/router-samples. To run a particular app, you need to know its name. 
 
-In Angular 5, you can open the file .angular-cli.json and see the names of the apps configured in the apps property there. For example, the first app is configured as ```"name": "basic"```. To run this app (after you did ```npm install```), run the following command: ```ng serve --app basic```. In Angular 6, the file .angular-cli.json is replaced with angular.json. There's no need to specify the ```--app``` option, and you can start the app named basic like this ```ng serve basic```.
+In Angular 5, you can open the file .angular-cli.json and see the names of the apps configured in the apps property there. For example, the first app is configured as ```"name": "basic"```. To run this app (after you did ```npm install```), run the following command: ```ng serve --app basic```. In Angular 6, the file .angular-cli.json is replaced with angular.json, and there's no need to specify the ```--app``` option; for example, you can start the app named basic like this ```ng serve basic```.
 
 You can read more about configuring multiple apps in the same Angular 5 project here: https://yakovfain.com/2017/04/06/angular-cli-multiple-apps-in-the-same-project
 
