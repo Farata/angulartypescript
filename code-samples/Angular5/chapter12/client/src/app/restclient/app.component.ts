@@ -1,5 +1,4 @@
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import 'rxjs/add/operator/map';
 import { Observable} from "rxjs/Observable";
 import {Subscription} from "rxjs/Subscription";
 import {Component, OnInit} from "@angular/core";
