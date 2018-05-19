@@ -1,0 +1,14 @@
+@import '../../styles/theme';
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+nga-product-suggestion {
+  margin: 16px;
+}

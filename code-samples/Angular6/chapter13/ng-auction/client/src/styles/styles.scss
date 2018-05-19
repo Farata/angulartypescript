@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:600');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import './theme';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($nga-theme);
+
+
+// Global styles.
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: mat-font-family($nga-typography);
+  line-height: mat-line-height($nga-typography, body-1);
+  font-size: mat-font-size($nga-typography, body-1);
+  height: 100%;
+  margin: 0;
+}

@@ -1,4 +1,3 @@
-import 'rxjs/add/operator/map';
 import {Component} from "@angular/core";
 
 import {ObservableService} from "./observable.service";
