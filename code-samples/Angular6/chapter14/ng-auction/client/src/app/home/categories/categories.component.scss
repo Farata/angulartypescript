@@ -1,0 +1,13 @@
+@import '../../../styles/theme';
+
+:host {
+  display: block;
+}
+
+.tabs {
+  background-color: mat-color($nga-background, card);
+}
+
+.grid-list-container {
+  margin: 16px;
+}

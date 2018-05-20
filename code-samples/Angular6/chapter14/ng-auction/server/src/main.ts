@@ -12,5 +12,6 @@ const server = createServer(app);
 createBidServer(server);
 
 server.listen(9090, "localhost", () => {
+  //const {address, port} = server.address();
   console.log('Listening on localhost:9090');
 });
