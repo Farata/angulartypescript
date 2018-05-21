@@ -8,16 +8,16 @@ describe('ngAuction search', () => {
     searchPage = new SearchPage();
   });
 
-  it('should perform the search for products that cost from $10 to $100',  () => {
+  it('should perform the search for products that cost from $10 to $100', async () => {
     searchPage.navigateToLandingPage();
-    let url =  browser.getCurrentUrl();
+    let url = await browser.getCurrentUrl();
     expect(url).toContain('/categories/all');
 
     searchPage.performSearch(10, 100);
-    url =  browser.getCurrentUrl();
+    url = await browser.getCurrentUrl();
     expect(url).toContain('/search?minPrice=10&maxPrice=100');
 
-    const firstProductPrice = searchPage.getFirstProductPrice();
+    const firstProductPrice = await searchPage.getFirstProductPrice();
     expect(firstProductPrice).toBeGreaterThan(10);
     expect(firstProductPrice).toBeLessThan(100);
   });
