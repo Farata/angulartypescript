@@ -1,5 +1,5 @@
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs';
+import {map} from 'rxjs/operators';
 
 import { Component } from '@angular/core';
 import { ObservableMedia } from '@angular/flex-layout';
@@ -26,6 +26,8 @@ export class HomeComponent {
     this.products$ = this.productService.getAll();
 
     this.columns$ = this.media.asObservable()
-      .map(mc => <number>this.breakpointsToColumnsNumber.get(mc.mqAlias));
+      .pipe(
+        map(mc => <number>this.breakpointsToColumnsNumber.get(mc.mqAlias))
+      );
   }
 }
