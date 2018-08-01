@@ -1,5 +1,5 @@
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import {Component} from "@angular/core";
 import {ProductService} from './product.service';
 import {Product} from './product';
