@@ -6,7 +6,7 @@ One of the most popular Web server among Java developers is Tomcat. Here's what 
 +
 [source, sh]
 ----
-ng build -prod --base-href .
+ng build --prod --base-href .
 ----
 +
 This will build the bundles into the dist directory of your project. 
