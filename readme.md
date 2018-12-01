@@ -1,4 +1,4 @@
-This repository contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). The code-samples directory has two versions of code samples: one for Angular 5, and another for Angular 6. The process of creating the Angular 6 version of these code samples is described at https://yakovfain.com/2018/05/16/how-i-migrated-a-dozen-of-projects-to-angular-6.
+This repository contains code samples from the book "Angular Development with TypeScript", Second Edition (see https://www.manning.com/books/angular-development-with-typescript-second-edition). The code-samples directory has two versions of code samples: one for Angular 5, and another for Angular 6 (the code for Angular 7 is coming soon). The process of creating the Angular 6 version of these code samples is described at https://yakovfain.com/2018/05/16/how-i-migrated-a-dozen-of-projects-to-angular-6.
 
 Each chapter comes with serveral sample apps that may be included in the same project, e.g. chapter3/router-samples. To run a particular app, you need to know its name. 
 
