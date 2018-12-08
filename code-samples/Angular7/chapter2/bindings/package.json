@@ -1,0 +1,36 @@
+{
+  "name": "bindings",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "echo \"Error: no test... minimal project\" && exit 1",
+    "lint": "echo \"Error: no lint... minimal project\" && exit 1",
+    "e2e": "echo \"Error: no e2e... minimal project\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^7.1.2",
+    "@angular/common": "^7.1.2",
+    "@angular/compiler": "^7.1.2",
+    "@angular/core": "^7.1.2",
+    "@angular/forms": "^7.1.2",
+    "@angular/http": "^7.1.2",
+    "@angular/platform-browser": "^7.1.2",
+    "@angular/platform-browser-dynamic": "^7.1.2",
+    "@angular/router": "^7.1.2",
+    "core-js": "^2.4.1",
+    "rxjs": "^6.1.0",
+    "tslib": "^1.9.0",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.11.0",
+    "@angular/cli": "^7.1.2",
+    "@angular/compiler-cli": "^7.1.2",
+    "@angular/language-service": "^7.1.2",
+    "typescript": "~3.1.6"
+  }
+}

@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+/* change the indicators from dashes to circles
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}*/
