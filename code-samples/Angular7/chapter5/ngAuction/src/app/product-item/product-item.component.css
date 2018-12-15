@@ -1,0 +1,11 @@
+.ratings {
+  color: darkred;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+mat-card-title {
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
