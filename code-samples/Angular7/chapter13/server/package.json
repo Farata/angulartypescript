@@ -1,0 +1,20 @@
+{
+  "name": "node-servers",
+  "description": "Node and Express samples",
+  "private": true,
+  "scripts": {
+    "devWs": "node build/simple-websocket-server.js",
+    "devTwoWayWs": "node build/two-way-websocket-server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "ws": "^6.1.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.18",
+    "@types/ws": "^6.0.1",
+    "typescript": "^3.2.2"
+  }
+}
