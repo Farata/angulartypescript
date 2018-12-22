@@ -1,0 +1,41 @@
+@import '../styles/theme';
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+.toolbar {
+  background-color: mat-color($nga-background, card);
+  position: relative;
+}
+
+.toolbar__logo-title-group {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+}
+
+.toolbar__logo {
+  height: 32px;
+  margin-right: 16px;
+}
+
+.toolbar__title {
+  color: mat-color($nga-foreground, text);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.toolbar__icon-button {
+  color: mat-color($nga-foreground, icon);
+}
+
+.toolbar__shopping-cart-button {
+  margin-right: 8px;
+}
