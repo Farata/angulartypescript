@@ -9,10 +9,10 @@ const routes: Routes = [
     resolve:{
       loadedJsonData: DataResolver
     },
-    runGuardsAndResolvers:'always'  // requires Angular 5.1 or later
+    runGuardsAndResolvers:'always'  
   }
 ];
 
 export const routing = RouterModule.forRoot(routes,
-  {onSameUrlNavigation: "reload"}   // requires Angular 5.1 or later
+  {onSameUrlNavigation: "reload"}   
   );

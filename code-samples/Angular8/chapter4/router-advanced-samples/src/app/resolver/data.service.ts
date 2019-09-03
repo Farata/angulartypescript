@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 @Injectable()
 export class DataService{
 
-    mydata:any;
+    mydata: Observable<string[]>;
 
     constructor(private http:HttpClient){}
 
@@ -14,13 +14,13 @@ export class DataService{
       console.log("In DataService.loadData()");
 
         if (this.mydata){
-            return from(this.mydata);  // return the cached data
+             return from(this.mydata);  // return the cached data
         } else
         {
-            return this.http.get<string[]>("./assets/48MB_DATA.json")
-              .pipe(
+            return this.http.get<string[]>("./assets/48MB_DATA.json");
+           /*  .pipe(
                 tap(data => this.mydata = data) // store the data in the var mydata
-              );
+              ); */
         }
     }
 }
