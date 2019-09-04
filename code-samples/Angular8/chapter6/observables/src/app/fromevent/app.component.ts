@@ -11,7 +11,7 @@ import { debounceTime, map } from 'rxjs/operators';
 })
 export class AppComponent implements AfterViewInit {
 
-  @ViewChild('stockSymbol')
+  @ViewChild('stockSymbol', { static: true })
   myInputField: ElementRef;
 
   ngAfterViewInit() {
