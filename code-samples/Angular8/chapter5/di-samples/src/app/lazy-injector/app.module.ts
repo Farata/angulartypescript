@@ -15,7 +15,7 @@ export function shippingModuleLoader() {
     RouterModule.forRoot([
       {path: '',        component: HomeComponent},
       {path: 'shipping', loadChildren: shippingModuleLoader},
-      {path: 'luxury', loadChildren: './lazymodule/luxury.module#LuxuryModule'} ]
+      {path: 'luxury', loadChildren: () => import('./lazymodule/luxury.module').then(m => m.LuxuryModule)} ]
       )
   ],
   declarations: [ AppComponent, HomeComponent],
