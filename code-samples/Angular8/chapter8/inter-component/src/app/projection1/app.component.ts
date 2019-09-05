@@ -12,7 +12,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
       </child>
     </div>
   `,
-  encapsulation:ViewEncapsulation.Native
+  encapsulation:ViewEncapsulation.ShadowDom
 })
 export class AppComponent {
 }

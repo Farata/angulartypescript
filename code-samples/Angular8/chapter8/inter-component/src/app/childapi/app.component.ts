@@ -14,7 +14,7 @@ import {AfterViewInit, Component, QueryList, ViewChild, ViewChildren} from "@ang
   `
 })
 export class AppComponent implements AfterViewInit {
-  @ViewChild('child1')
+  @ViewChild('child1', { static: true })
   firstChild: ChildComponent;  // reference to one child
 
   @ViewChildren(ChildComponent)
