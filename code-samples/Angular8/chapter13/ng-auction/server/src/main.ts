@@ -5,8 +5,10 @@ import { createBidServer } from './ws-auction';
 import { router } from './rest-auction';
 
 const app = express();
+
 app.use('/api', router);
 app.use('/data', express.static(path.join(__dirname, '..', 'data')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 const server = createServer(app);
 createBidServer(server);
@@ -14,5 +16,5 @@ createBidServer(server);
 server.listen(9090, "localhost", () => {
   // const {address, port} = server.address();
   // console.log('Listening on %s %s', address, port);
-  console.log('Listening on localhost:9000');
+  console.log('Listening on localhost:9090');
 });

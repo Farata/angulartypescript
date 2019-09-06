@@ -11,3 +11,7 @@ In chapters 2, 3, and 5 we build the ngAuction app that uses Bootstrap 4, and st
 In the video Angular Applied (see https://www.youtube.com/watch?v=owZVKNg6cG4), Yakov Fain shows how to build one of the sample apps from the book from scratch. 
 
 For Angular training inquiries send an email to training @ faratasystems.com
+
+
+UPDATE (September 2019).     While upgrading the ng-auction to Angular 8, the components that used the flex-layout library wouldn't compile.  In the older versions of flex-layout we used ObservableMedia, which is deprecated. 
+We replaced it with the MediaObserver in chapter13/ngauction

@@ -23,7 +23,7 @@ import { API_BASE_URL, WS_URL } from './app.tokens';
     BrowserAnimationsModule,
     HttpClientModule,
     FlexLayoutModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {useHash: environment.production}),
 
     MatButtonModule,
     MatIconModule,
