@@ -5,14 +5,16 @@
     "strictInjectionParameters": true
   },
   "compilerOptions": {
+    "downlevelIteration": true,
     "importHelpers": true,
+    "module": "esnext",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "strictPropertyInitialization": false,
     "typeRoots": [
       "node_modules/@types"
