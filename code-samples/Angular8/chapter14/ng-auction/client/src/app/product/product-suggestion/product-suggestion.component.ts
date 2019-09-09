@@ -1,5 +1,5 @@
 import { Component, Inject, Input } from '@angular/core';
-import { ObservableMedia } from '@angular/flex-layout';
+import { MediaObserver } from '@angular/flex-layout';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { API_BASE_URL } from '../../app.tokens';
@@ -23,11 +23,9 @@ export class ProductSuggestionComponent {
 
   constructor(
     @Inject(API_BASE_URL) private readonly baseUrl: string,
-    private readonly media: ObservableMedia) {
-    // If the initial screen size is xs ObservableMedia doesn't emit an event
-    // and grid-list rendering fails. Once the following issue is closed, this
-    // comment can be removed: https://github.com/angular/flex-layout/issues/388
-    this.columns$ = this.media.asObservable()
+    private readonly media: MediaObserver) {
+
+    this.columns$ = this.media.media$
       .pipe(
         map(mc => <number>this.breakpointsToColumnsNumber.get(mc.mqAlias)),
         startWith(3)
