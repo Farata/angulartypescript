@@ -6,17 +6,22 @@ export class SearchPage {
      const searchOnToolbar = element(by.id('search'));
      searchOnToolbar.click();
 
+     const EC = protractor.ExpectedConditions;
+     browser.wait(EC.visibilityOf($('input[formControlName="minPrice"]')), 1000);
+
      const minPrice = $('input[formControlName="minPrice"]');
      const maxPrice = $('input[formControlName="maxPrice"]');
+
      minPrice.sendKeys(minimalPrice);
      maxPrice.sendKeys(maximumPrice);
 
      const searchOnForm = element(by.buttonText('SEARCH'));
      searchOnForm.click();
+     
      // this.waitForUrlTocontain('/search', 5000,
      //               'The URL should contain "/search"');
 
-    const EC = protractor.ExpectedConditions;
+    //const EC = protractor.ExpectedConditions;
     const urlChanged = EC.urlContains('/search');
     browser.wait(urlChanged, 5000, 'The URL should contain /search');
 
@@ -47,27 +52,3 @@ waitForUrlTocontain (urlSegment: string, timeout: number,
   }
 
 }
-
-
-
-
-
-
-
-/*
-import { browser, by, element } from 'protractor';
-
-export class SearchPage {
-
-  search = element(by.id('search'));
-
-  async performSearch() {
-
-    await this.search.click();
-    browser.sleep(3000);
-  }
-
-  async navigateToLanding() {
-    return await browser.get('/');
-  }
-}*/
