@@ -1,0 +1,51 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "ng build restclient --prod",
+    "postbuild": "npm run deploy",
+    "predeploy": "rimraf ../server/build/public && mkdirp ../server/build/public",
+    "deploy": "copyfiles -f dist/** ../server/build/public"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^9.1.9",
+    "@angular/common": "^9.1.9",
+    "@angular/compiler": "^9.1.9",
+    "@angular/core": "^9.1.9",
+    "@angular/forms": "^9.1.9",
+    "@angular/platform-browser": "^9.1.9",
+    "@angular/platform-browser-dynamic": "^9.1.9",
+    "@angular/router": "^9.1.9",
+    "core-js": "^2.4.1",
+    "rxjs": "^6.5.5",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.7",
+    "@angular/cli": "^9.1.7",
+    "@angular/compiler-cli": "^9.1.9",
+    "@angular/language-service": "^9.1.9",
+    "@types/jasmine": "~3.3.5",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
+    "copyfiles": "^2.1.0",
+    "jasmine-core": "~3.3.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.1.4",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-cli": "~2.0.0",
+    "karma-coverage-istanbul-reporter": "^2.0.4",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "mkdirp": "^0.5.1",
+    "protractor": "~5.4.1",
+    "rimraf": "^2.5.4",
+    "ts-node": "~7.0.1",
+    "tslint": "~5.12.0",
+    "typescript": "~3.8.3"
+  }
+}
